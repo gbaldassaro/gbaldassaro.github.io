@@ -3,7 +3,14 @@
 ---
 
 // 1. Override the default font size (the default is usually 18px or larger)
-$doc-font-size: 1px; 
+$doc-font-size: 10px; 
+
+// Colors
+$background-color: #050505;           // A very dark, near-black color (default neon is lighter)
+$primary-color: #e60000;              // A strong, readable red for accents
+$link-color: $primary-color;          // Makes your links match the accent
+$info-color: $primary-color;          // Updates buttons and notice blocks to red
+$masthead-link-color: $primary-color; // Ensures top navigation hover states match
 
 // 2. Import the theme (this line MUST come after your custom variables)
 @import "minimal-mistakes";
