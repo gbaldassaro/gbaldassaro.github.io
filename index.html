@@ -2,30 +2,34 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: single
-author_profile: true
+---
+layout: splash
+author_profile: true 
 
-# Define your project grid here
+# 1. Your Short Blurb (This replaces typing in the body)
+intro:
+  - excerpt: 'Hi, I am [Your Name]. I am a developer who specializes in building sleek, high-contrast websites and applications. Check out some of my recent work below!'
+
+# 2. Your Project Grid
 feature_row:
-  - image_path: /assets/images/headshot.jpg
+  - image_path: /assets/images/project1.jpg
     alt: "Project One"
     title: "Neon Redesign"
     excerpt: "A complete overhaul of the site layout using a dark cyberpunk aesthetic."
-    # url: "/projects/neon-redesign/"
+    url: "/projects/neon-redesign/"
     btn_label: "View Project"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/headshot.jpg
+  - image_path: /assets/images/project2.jpg
     alt: "Project Two"
     title: "Python Data Scraper"
     excerpt: "A tool built to parse and analyze large datasets from the web."
-    # url: "https://github.com/yourusername/repo" # Can be an external link too!
+    url: "https://github.com/yourusername/repo"
     btn_label: "View Code"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/headshot.jpg
+  - image_path: /assets/images/project3.jpg
     alt: "Project Three"
     title: "Coming Soon"
     excerpt: "Currently working on something awesome."
-    # You can leave out the url and button if the project isn't ready
 ---
