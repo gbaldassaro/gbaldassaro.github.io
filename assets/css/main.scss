@@ -2,8 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// 1. Override the default font size (the default is usually 18px or larger)
-$doc-font-size: 10px; 
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 
 // Colors
 $background-color: #050505;           // A very dark, near-black color (default neon is lighter)
@@ -12,5 +11,6 @@ $link-color: $primary-color;          // Makes your links match the accent
 $info-color: $primary-color;          // Updates buttons and notice blocks to red
 $masthead-link-color: $primary-color; // Ensures top navigation hover states match
 
-// 2. Import the theme (this line MUST come after your custom variables)
+$doc-font-size: 10px; 
+
 @import "minimal-mistakes";
