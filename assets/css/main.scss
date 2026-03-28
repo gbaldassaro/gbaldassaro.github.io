@@ -18,3 +18,29 @@ $doc-font-size: 15px;
 @import "minimal-mistakes/skins/neon";
 
 @import "minimal-mistakes";
+
+// 1. Make the cards stretch to the same height
+.feature__wrapper .archive__item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+// 2. Lock the image heights so titles align perfectly
+.feature__wrapper .archive__item-teaser img {
+  width: 100%;
+  height: 1000px; /* You can change this number to make images taller or shorter */
+  object-fit: cover; /* Prevents the images from looking squished */
+}
+
+// 3. Make the text area flexible
+.feature__wrapper .archive__item-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+// 4. Force the description text to take up the empty space, pushing the button down
+.feature__wrapper .archive__item-excerpt {
+  flex-grow: 1;
+}
