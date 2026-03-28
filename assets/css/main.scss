@@ -1,9 +1,6 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
-@import "minimal-mistakes/skins/neon";
-
 // Colors
 $background-color: #050505;           // A very dark, near-black color (default neon is lighter)
 $primary-color: #e60000;              // A strong, readable red for accents
@@ -17,5 +14,7 @@ $info-color: $primary-color;          // Updates buttons and notice blocks to re
 $masthead-link-color: $primary-color; // Ensures top navigation hover states match
 
 $doc-font-size: 15px; 
+
+@import "minimal-mistakes/skins/neon";
 
 @import "minimal-mistakes";
