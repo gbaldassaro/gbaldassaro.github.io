@@ -18,36 +18,3 @@ $doc-font-size: 15px;
 @import "minimal-mistakes/skins/neon";
 
 @import "minimal-mistakes";
-
-// --- PERFECT GRID ALIGNMENT ---
-
-// 1. Target the feature row items specifically
-.feature__item .archive__item {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-// 3. Turn the text container into a flex column
-.feature__item .archive__item-body {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-// 4. Force titles to take up the same amount of space (fixes 1-line vs 2-line title issues)
-.feature__item .archive__item-title {
-  min-height: 3.5rem; /* Adjust this if you have really long titles */
-  margin-bottom: 0.5rem;
-}
-
-// 5. Let the description expand to fill empty space
-.feature__item .archive__item-excerpt {
-  flex-grow: 1;
-}
-
-// 6. Push the button container (which is usually a <p> tag) to the very bottom
-.feature__item .archive__item-body > p:last-child {
-  margin-top: auto;
-  margin-bottom: 0;
-}
