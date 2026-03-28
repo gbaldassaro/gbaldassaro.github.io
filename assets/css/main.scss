@@ -19,12 +19,18 @@ $doc-font-size: 15px;
 
 @import "minimal-mistakes";
 
-// Disable hover fade on the author profile
-.author__avatar a:hover,
-.author__avatar img:hover,
-.author__content a:hover,
-.author__urls a:hover {
-  opacity: 1 !important;
-  transition: none !important;
+// Lock author sidebar links and icons to solid white
+.author__urls a,
+.author__urls a i, // This targets the little FontAwesome icons
+.author__content a {
+  color: #ffffff !important; 
+  transition: none !important; // Kills the slow fade effect
+}
+
+// Ensure they stay white even when hovered
+.author__urls a:hover,
+.author__urls a:hover i,
+.author__content a:hover {
+  color: #ffffff !important; 
 }
 
