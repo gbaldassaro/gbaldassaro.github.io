@@ -18,17 +18,3 @@ $doc-font-size: 15px;
 @import "minimal-mistakes/skins/neon";
 
 @import "minimal-mistakes";
-
-/* Disable fade-in animation for author profile and other elements */
-@keyframes intro {
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.author__avatar, .author__name, .author__bio, .author__links {
-  animation: none;
-  opacity: 1;
-}
-
