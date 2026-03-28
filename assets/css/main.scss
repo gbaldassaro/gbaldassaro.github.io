@@ -5,6 +5,14 @@
 $background-color: #050505;           // A very dark, near-black color (default neon is lighter)
 $primary-color: #e60000;              // A strong, readable red for accents
 
+// Disable hover fade on the author profile
+.author__avatar a:hover,
+.author__avatar img:hover,
+.author__content a:hover,
+.author__urls a:hover {
+  opacity: 1 !important;
+}
+
 $footer-background-color: $primary-color; 
 $footer-color: #ffffff; 
 $footer-link-color: #ffffff;
