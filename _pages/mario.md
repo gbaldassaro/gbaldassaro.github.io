@@ -1,6 +1,5 @@
 ---
-permalink: /projects/mario
-title: "Project"
+permalink: /mario/
 layout: single
 author_profile: true
 ---

@@ -1,6 +1,5 @@
 ---
-permalink: /project/pico8
-title: "Project"
+permalink: /pico8/
 layout: single
 author_profile: true
 ---
