@@ -2,8 +2,7 @@
 permalink: /pico8/
 layout: single
 author_profile: true
+title: "PICO-8 Mini-Demos"
 ---
 
-# PICO-8 Mini-Demos
-
-Hello World
+Hello World pico
