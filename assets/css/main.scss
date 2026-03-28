@@ -19,28 +19,35 @@ $doc-font-size: 15px;
 
 @import "minimal-mistakes";
 
-// 1. Make the cards stretch to the same height
-.feature__wrapper .archive__item {
+// --- PERFECT GRID ALIGNMENT ---
+
+// 1. Target the feature row items specifically
+.feature__item .archive__item {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-// 2. Lock the image heights so titles align perfectly
-.feature__wrapper .archive__item-teaser img {
-  width: 100%;
-  height: 1000px; /* You can change this number to make images taller or shorter */
-  object-fit: cover; /* Prevents the images from looking squished */
-}
-
-// 3. Make the text area flexible
-.feature__wrapper .archive__item-body {
+// 3. Turn the text container into a flex column
+.feature__item .archive__item-body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-// 4. Force the description text to take up the empty space, pushing the button down
-.feature__wrapper .archive__item-excerpt {
+// 4. Force titles to take up the same amount of space (fixes 1-line vs 2-line title issues)
+.feature__item .archive__item-title {
+  min-height: 3.5rem; /* Adjust this if you have really long titles */
+  margin-bottom: 0.5rem;
+}
+
+// 5. Let the description expand to fill empty space
+.feature__item .archive__item-excerpt {
   flex-grow: 1;
+}
+
+// 6. Push the button container (which is usually a <p> tag) to the very bottom
+.feature__item .archive__item-body > p:last-child {
+  margin-top: auto;
+  margin-bottom: 0;
 }
