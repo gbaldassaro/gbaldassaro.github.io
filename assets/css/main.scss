@@ -19,20 +19,16 @@ $doc-font-size: 15px;
 
 @import "minimal-mistakes";
 
-// 1. Lock all links, icons, and images in the author profile
-.author__profile a,
-.author__profile a i,
-.author__profile img {
-  color: #ffffff !important;
-  opacity: 1 !important;
-  transition: none !important; // Kills the fade animation entirely
+/* Disable fade-in animation for author profile and other elements */
+@keyframes intro {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-// 2. Force them to stay exactly the same when hovered over
-.author__profile a:hover,
-.author__profile a:hover i,
-.author__profile img:hover {
-  color: #ffffff !important;
-  opacity: 1 !important;
+.author__avatar, .author__name, .author__bio, .author__links {
+  animation: none;
+  opacity: 1;
 }
 
