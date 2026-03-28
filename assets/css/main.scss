@@ -5,14 +5,6 @@
 $background-color: #050505;           // A very dark, near-black color (default neon is lighter)
 $primary-color: #e60000;              // A strong, readable red for accents
 
-// Disable hover fade on the author profile
-.author__avatar a:hover,
-.author__avatar img:hover,
-.author__content a:hover,
-.author__urls a:hover {
-  opacity: 1 !important;
-}
-
 $footer-background-color: $primary-color; 
 $footer-color: #ffffff; 
 $footer-link-color: #ffffff;
@@ -26,3 +18,12 @@ $doc-font-size: 15px;
 @import "minimal-mistakes/skins/neon";
 
 @import "minimal-mistakes";
+
+// Disable hover fade on the author profile
+.author__avatar a:hover,
+.author__avatar img:hover,
+.author__content a:hover,
+.author__urls a:hover {
+  opacity: 1 !important;
+}
+
