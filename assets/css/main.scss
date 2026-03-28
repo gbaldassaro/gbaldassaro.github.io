@@ -25,5 +25,6 @@ $doc-font-size: 15px;
 .author__content a:hover,
 .author__urls a:hover {
   opacity: 1 !important;
+  transition: none !important;
 }
 
