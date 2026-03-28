@@ -19,18 +19,20 @@ $doc-font-size: 15px;
 
 @import "minimal-mistakes";
 
-// Lock author sidebar links and icons to solid white
-.author__urls a,
-.author__urls a i, // This targets the little FontAwesome icons
-.author__content a {
-  color: #ffffff !important; 
-  transition: none !important; // Kills the slow fade effect
+// 1. Lock all links, icons, and images in the author profile
+.author__profile a,
+.author__profile a i,
+.author__profile img {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  transition: none !important; // Kills the fade animation entirely
 }
 
-// Ensure they stay white even when hovered
-.author__urls a:hover,
-.author__urls a:hover i,
-.author__content a:hover {
-  color: #ffffff !important; 
+// 2. Force them to stay exactly the same when hovered over
+.author__profile a:hover,
+.author__profile a:hover i,
+.author__profile img:hover {
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
 
