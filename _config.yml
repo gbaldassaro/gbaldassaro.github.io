@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   "Gage Baldassaro's personal portfolio"
 github_username: "gbaldassaro"
 minimal_mistakes_skin: "neon"
-search: true
+search: false
 
 # Build settings
 markdown: kramdown
@@ -107,3 +107,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+atom_feed:
+  hide: true
