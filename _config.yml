@@ -57,7 +57,7 @@ plugins:
 author:
   name   : "Gage Baldassaro"
   avatar : "/assets/images/headshot.jpg"
-  bio    : "Computer Science Student at Rice University Focused on Game Development"
+  bio    : "Computer Science Student at Rice University"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
