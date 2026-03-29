@@ -22,3 +22,12 @@ $intro-transition: intro 0s both;
 
 @import "minimal-mistakes";
 
+@-webkit-keyframes intro {
+  0% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes intro {
+  0% { opacity: 1; }
+  100% { opacity: 1; }
+}
