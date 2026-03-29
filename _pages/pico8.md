@@ -5,4 +5,4 @@ author_profile: true
 title: "PICO-8 Mini-Demos"
 ---
 
-Hello World pico
+pico
