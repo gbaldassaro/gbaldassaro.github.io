@@ -31,3 +31,15 @@ $intro-transition: intro 0s both;
   0% { opacity: 1; }
   100% { opacity: 1; }
 }
+
+// --- CONSTRICT LANDING PAGE CONTENT WIDTH ---
+
+// Target the text blurb and the project grid on the landing page
+.layout--splash .page__inner-wrap,
+.layout--splash .archive {
+  max-width: 900px; /* Change this number to make the content narrower or wider */
+  margin-left: auto;
+  margin-right: auto; /* These two margins keep the content perfectly centered */
+  padding-left: 2rem;
+  padding-right: 2rem; /* Keeps the content from touching the screen edges on mobile */
+}
