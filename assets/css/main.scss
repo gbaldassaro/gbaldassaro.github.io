@@ -13,7 +13,7 @@ $link-color: $primary-color;          // Makes your links match the accent
 $info-color: $primary-color;          // Updates buttons and notice blocks to red
 $masthead-link-color: $primary-color; // Ensures top navigation hover states match
 
-$doc-font-size: 15px; 
+$doc-font-size: 14px; 
 
 $global-transition: all 0s ease-in-out;
 $intro-transition: intro 0s both;
@@ -30,4 +30,10 @@ $intro-transition: intro 0s both;
 @keyframes intro {
   0% { opacity: 1; }
   100% { opacity: 1; }
+}
+
+.feature__item .archive__item-teaser img {
+  height: 80%; 
+  width: 80%;
+  object-fit: cover;
 }
