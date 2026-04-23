@@ -2,6 +2,7 @@
 
 ---
 // Colors
+{
 $background-color: #050505;           // A very dark, near-black color (default neon is lighter)
 $primary-color: #e60000;              // A strong, readable red for accents
 
@@ -31,9 +32,4 @@ $intro-transition: intro 0s both;
   0% { opacity: 1; }
   100% { opacity: 1; }
 }
-
-.feature__item .archive__item-teaser img {
-  height: 80%; 
-  width: 80%;
-  object-fit: cover;
 }
