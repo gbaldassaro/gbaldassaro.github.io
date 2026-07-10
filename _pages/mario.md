@@ -1,6 +1,7 @@
 ---
 permalink: /mario/
 layout: single
+classes: wide
 author_profile: true
 title: "2D Platformer Engine"
 ---
