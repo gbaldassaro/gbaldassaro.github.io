@@ -8,6 +8,8 @@ title: "2D Platformer Engine"
 
 This project is a recreation of level 1-1 from Super Mario Bros. made in Java, featuring custom physics, entity and element systems, and real-time rendering. I worked on this project towards the end of my AP Computer Science A course in high school. After following [this guide](https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong/) to make Pong in Java, I felt like challenging myself to create something much more complex yet approachable. The code is exactly as I left it when I stopped working on it in high school, and I think that it's fun to see how far I've come and how I still use many of the same coding practices in my work today. 
 
+# [GitHub Repository](https://github.com/gbaldassaro/Mario-Java)
+
 ## Physics
 For this project, I implemented a custom physics engine that has gravity, acceleration-based movement, friction, and axis-aligned bounding box collisions.
 

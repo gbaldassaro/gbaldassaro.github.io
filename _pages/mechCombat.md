@@ -6,4 +6,6 @@ author_profile: true
 title: "Mech Combat Demo"
 ---
 
+# [GitHub Repository](https://github.com/gbaldassaro/Unity-AC-Demo)
+
 Page under construction!

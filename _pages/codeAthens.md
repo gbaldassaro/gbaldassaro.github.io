@@ -6,6 +6,6 @@ author_profile: true
 title: "Code Athens"
 ---
 
-[Play Here!](https://gbaldassaro.itch.io/codeathens)
+# [Play Here!](https://gbaldassaro.itch.io/codeathens)
 
 Page under construction!
