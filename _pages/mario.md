@@ -13,69 +13,19 @@ This project is a recreation of level 1-1 from Super Mario Bros. made in Java, f
 ## Physics
 For this project, I implemented a custom physics engine that has gravity, acceleration-based movement, friction, and axis-aligned bounding box collisions.
 
-The game logic is executed as follows:
-
-```Java
-public  void  gameLogic(){
-	for(Entity  o  : movingObjectList){
-		o.collide();
-		o.motion();
-		o.moveMario(key);
-		o.setGrounded(false);
-	}
-	for(Element  e  : elementList){
-		e.collide(movingObjectList);
-	}
-}
-```
-
 When the level is created, every moving object (including Mario and Goombas) is added to an `ArrayList` of type `Entity`, and every static element (including the ground, blocks, pipes, etc.) is added to an `ArrayList` of type `Element`. Every frame, each element in the `movingObjectList` checks for collisions, is moved, and then has its grounded state set to false as default. Likewise, each element in the `elementList` checks for collisions with objects in `movingObjectList` every frame.  
 
 > (see "Entity and Element System" section below for more on `Entity` and `Element` classes).
 
 **Collisions**
-Collisions between `Entity` objects are handled using axis-aligned bounding boxes (AABB). Every frame, every `Entity` checks for collisions with every other `Entity`. Thanks to the small scope of this project, there is negligible performance cost for all of these checks. For example, here is the collision check for `Entity` objects falling onto each other:
 
-```Java
-//collision between entities
-public  void  collide(){
-	ArrayList<Entity> objects  =  MarioGame.getMovingObjectList();
-	for(Entity  o  :  objects){
-		//check upper collision
-		if (o.getY() < y - (32  * (int)o.getPowerupState()) &&
-		o.getY() -  o.getSpeedY() >= y -  32  - (32  * (int)o.getPowerupState()) &&
-		o.getX() > x -  32  &&
-		o.getX() < x +  32){
-			if(o.getType().equals("mario") &&  this.getAlive()){
-				if(KeyReader.getJumpState()){
-					o.speedY  = JUMP;
-				}
-				else{
-					o.speedY  =  10;
-				}
-				this.setAlive(false);
-			}
-			else  if(this.getType().equals("mario") &&  this.getAlive()){
-				for(Entity  e  :  objects){
-					e.respawn();
-				}
-			}
-		}
-			
-//rest of collision logic...
+Collisions between `Entity` objects are handled using axis-aligned bounding boxes (AABB). Every frame, every `Entity` checks for collisions with every other `Entity`. Thanks to the small scope of this project, there is negligible performance cost for all of these checks.
 
-	}
-}
-```
-
-Each `Entity` is 32 by 32 pixels. A collision is about to happen if one `Entity`'s collision box will be moved into another `Entity`'s collision box on the next frame. In this example, if true, it then checks if one of the `Entity` objects is Mario. If Mario is above, the other `Entity` will be stomped on, so Mario receives upwards velocity and the other `Entity` is defeated. If Mario is below, Mario will be hit, so Mario is defeated and all `Entity` objects are reset. 
-
-> The "`(int)o.getPowerupState()`" is a vestige of the unfinished powerup system, where Mario's height is determined by his powerup state.
-
-Similar logic runs for the other three sides of each `Entity` objects' AABB, executing custom defined reactions to collisions. Additionally, collision checks between `Element` objects and `Entity` objects are done in the same way, checking if an `Entity`'s speed will move it into one of the four sides of an `Element`. If so, the `Entity` is placed on the edge of the `Element` with other reactions based on `Entity` type and which side it collided with (for example, `Entity` grounded states are set to true if the top side is collided with). 
+Each `Entity` is 32 by 32 pixels. A collision is about to happen if one `Entity`'s collision box will be moved into another `Entity`'s collision box on the next frame. Collision logic runs for all four sides of each `Entity` objects' AABB, executing custom defined reactions to collisions. Additionally, collision checks between `Element` objects and `Entity` objects are done in the same way, checking if an `Entity`'s speed will move it into one of the four sides of an `Element`. If so, the `Entity` is placed on the edge of the `Element` with other reactions based on `Entity` type and which side it collided with (for example, `Entity` grounded states are set to true if the top side is collided with). 
 
 **Movement**
-After collisions are determined, each `Entity` object is moved. Each `Entity` has X and Y speed variables that are applied to their X and Y positions. These speed variables are determined by a constantly applied gravity force, collision reactions, and the player's input for Mario only. Horizontal motion accounts for screen scroll speed so that `Entity` objects are not moved incorrectly while the screen moves. 
+
+After collisions are determined, each `Entity` object is moved. Each `Entity` has X and Y speed variables that are applied to their X and Y positions. These speed variables are determined by a constantly applied gravity force, collision reactions, and the player's input (for Mario). Horizontal motion accounts for screen scroll speed so that `Entity` objects are not moved incorrectly while the screen moves. 
 
 ## Entity and Element System
 every entity extends from mario
