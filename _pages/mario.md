@@ -91,6 +91,6 @@ I made this project before I was exposed to many fundamental concepts in game de
 ## Special Thanks
 My older brother Blake was my AP Computer Science A teacher, and he was the first person I'd show my progress on this project to. He would always give suggestions on how to solve problems I was facing and let me figure out how to apply the course concepts to solve them. 
 
-I grew up playing countless games on the GameCube, Wii, and PS4 with him. Some of my favorite memories come from us 100%ing Mario Kart: Double Dash or playing Super Smash Bros. for hours together, and I think I love video games so much because of that. I wouldn't be the person I am today without him. 
+I grew up playing countless games on the GameCube, Wii, and PS4 with him. Some of my favorite memories come from us 100% completing Mario Kart: Double Dash or playing Super Smash Bros. for hours together, and I think I love video games so much because of that. I wouldn't be the person I am today without him. 
 
 Thank you, Blake.

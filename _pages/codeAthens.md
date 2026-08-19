@@ -1,9 +1,9 @@
 ---
-permalink: /parfait/
+permalink: /codeAthens/
 layout: single
 classes: wide
 author_profile: true
-title: "Planetary Parfait"
+title: "Code Athens"
 ---
 
-parfait
+Code Athens
