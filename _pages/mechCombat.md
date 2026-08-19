@@ -6,4 +6,4 @@ author_profile: true
 title: "Mech Combat Demo"
 ---
 
-Mech Combat Demo
+Page under construction!

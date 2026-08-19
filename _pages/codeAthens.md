@@ -6,4 +6,4 @@ author_profile: true
 title: "Code Athens"
 ---
 
-Code Athens
+Page under construction!
