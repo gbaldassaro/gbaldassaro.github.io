@@ -21,6 +21,10 @@ When the level is created, every moving object (including Mario and Goombas) is 
 
 Collisions between `Entity` objects are handled using axis-aligned bounding boxes (AABB). Every frame, every `Entity` checks for collisions with every other `Entity`. Thanks to the small scope of this project, there is negligible performance cost for all of these checks.
 
+<div align="center">
+	<img src="/assets/images/mario_collisions.gif" alt="Collisions" width="400">
+</div>
+
 Each `Entity` is 32 by 32 pixels. A collision is about to happen if one `Entity`'s collision box will be moved into another `Entity`'s collision box on the next frame. Collision logic runs for all four sides of each `Entity` objects' AABB, executing custom defined reactions to collisions. Additionally, collision checks between `Element` objects and `Entity` objects are done in the same way, checking if an `Entity`'s speed will move it into one of the four sides of an `Element`. If so, the `Entity` is placed on the edge of the `Element` with other reactions based on `Entity` type and which side it collided with (for example, `Entity` grounded states are set to true if the top side is collided with). 
 
 **Movement**
@@ -37,8 +41,9 @@ color pallet switching for different enemies, run animation using index counter
 ## Input Handling
 
 ## Reflections
-would change delta time, level and sprite loading, add level end, add koopa sprite, add super mario
-I made this project before I was exposed to many fundamental concepts in game development like delta-time, data-driven design, or package structure. If I were to continue polishing this project, 
+I made this project before I was exposed to many fundamental concepts in game development like delta-time, data-driven design, or file structure. Because of the lack of delta-time corrections, Mario's movement is dependent on framerate. While the code targets a specific framerate, slowdowns in framerate still lead to slowdowns in physics and gameplay. Additionally, I hardcoded the entire level and every sprite, which is functional but not at all scaleable. Pipelines for loading external level files and sprites would improve this project a ton. Finally, every script used in the project is unorganized in a single directory, so having file organization and using packages to communicate between files would work much better.
+
+While not flawless, I still greatly appreciate the learning experience that this project provided me. 
 
 ## Special Thanks
 My older brother Blake was my AP Computer Science A teacher, and he was the first person I'd show my progress on this project to. He would always give suggestions on how to solve problems I was facing and let me figure out how to apply the course concepts to solve them. 
