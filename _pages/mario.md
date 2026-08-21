@@ -41,8 +41,9 @@ Mario's movement is acceleration based, with different acceleration and top spee
 
 
 ## Entity and Element System
-every entity extends from mario
-need element system for running collision checks between moving objects and elements
+Every moving object in this project is an `Entity`, including Mario and Goombas (as well as planned additions like Koopas and Powerups). The `Entity` class serves as the base superclass that all moving characters extend. It manages shared variables for basic properties, such as position and speed, and defines essential methods for moving and rendering the objects. The `Entity` base class contains all logic for Mario himself, so any other `Entity` objects override his methods for their own. Utilizing this base `Entity` class, the main game loop simply iterates through a list of all `Entity` objects and calls their respective move and draw methods.
+
+The `Element` class operates similarly to the `Entity` class, but it is dedicated to static level geometry like bricks, pipes, and floors. The `Element` superclass establishes the baseline collision and rendering definitions, which are then overridden by specific subclasses based on the unique properties of that object.
 
 ## Rendering
 Each sprite is stored as a 2D array of integers, with animated sprites being stored in 3D arrays. The integers in the array correspond to predefined colors from a color pallet. Every frame, each pixel of the sprite is colored in according to its integer array. A benefit of this is that color pallets can easily be changed to recolor objects, such as recoloring Mario to give his Fire-Flower look. 
