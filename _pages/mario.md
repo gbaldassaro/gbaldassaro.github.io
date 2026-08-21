@@ -8,6 +8,11 @@ title: "Java Super Mario Bros."
 
 This project is a recreation of level 1-1 from Super Mario Bros. made in Java, featuring custom physics, entity and element systems, and real-time rendering. I worked on this project towards the end of my AP Computer Science A course in high school. After following [this guide](https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong/) to make Pong in Java, I felt like challenging myself to create something much more complex yet approachable. The code is exactly as I left it when I stopped working on it in high school, and I think that it's fun to see how far I've come and how I still use many of the same coding practices in my work today. 
 
+<video autoplay muted loop playsinline style="margin-left: 75px;" width="400">
+  <source src="/assets/images/mario_level.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 # [GitHub Repository](https://github.com/gbaldassaro/Mario-Java)
 
 ## Physics
