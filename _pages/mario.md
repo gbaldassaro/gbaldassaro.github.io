@@ -22,12 +22,12 @@ When the level is created, every moving object (including Mario and Goombas) is 
 Collisions between `Entity` objects are handled using axis-aligned bounding boxes (AABB). Every frame, every `Entity` checks for collisions with every other `Entity`. Thanks to the small scope of this project, there is negligible performance cost for all of these checks.
 
 
-<img src="/assets/images/mario_collisions.gif" style="margin-left: 50px;" alt="Collisions" width="400">
+<img src="/assets/images/mario_collisions.gif" style="margin-left: 75px;" alt="Collisions" width="400">
 
 > Example of collisions with Mario and `Element` objects
 
 
-Each `Entity` is 32 by 32 pixels. A collision is about to happen if one `Entity`ss collision box will be moved into another `Entity`ss collision box on the next frame. Collision logic runs for all four sides of each `Entity` objects' AABB, executing custom defined reactions to collisions. Additionally, collision checks between `Element` objects and `Entity` objects are done in the same way, checking if an `Entity`ss speed will move it into one of the four sides of an `Element`. If so, the `Entity` is placed on the edge of the `Element` with other reactions based on `Entity` type and which side it collided with (for example, `Entity` grounded states are set to true if the top side is collided with). 
+Each `Entity` is 32 by 32 pixels. A collision is about to happen if one `Entity`'s collision box will be moved into another `Entity`'s collision box on the next frame. Collision logic runs for all four sides of each `Entity` objects' AABB, executing custom defined reactions to collisions. Additionally, collision checks between `Element` objects and `Entity` objects are done in the same way, checking if an `Entity`'s speed will move it into one of the four sides of an `Element`. If so, the `Entity` is placed on the edge of the `Element` with other reactions based on `Entity` type and which side it collided with (for example, `Entity` grounded states are set to true if the top side is collided with). 
 
 **Movement**
 
@@ -35,7 +35,7 @@ After collisions are determined, each `Entity` object is moved. Each `Entity` ha
 
 Mario's movement is acceleration based, with different acceleration and top speed magnitudes based on if the player is holding the run button. Additionally, Mario's acceleration and decceleration is dependent on if he is grounded or not, making him slow down and change directions much slower when in the air.
 
-<img src="/assets/images/mario_movement.gif" style="margin-left: 50px;" alt="Collisions" width="400">
+<img src="/assets/images/mario_movement.gif" style="margin-left: 75px;" alt="Collisions" width="400">
 
 > Examples of changing directions when grounded and in the air
 
@@ -49,7 +49,7 @@ Each sprite is stored as a 2D array of integers, with animated sprites being sto
 
 Animated sprites are stored in 3D arrays so that animation frames can be chosen via an index. For example, when Mario moves along the ground, a `double` is increased based on his speed, which is then cast as an `int` and divided modulo `n`, where `n` is the number of frames in the animation, and finally used to index through the 3D animation array. This cycles through each frame of the animation and gave me tight control of animation timings. This method was applicable to the Goomba's walk cycle as well.  
 
-<img src="/assets/images/mario_animations.gif" style="margin-left: 50px;" alt="Collisions" width="400">
+<img src="/assets/images/mario_animations.gif" style="margin-left: 75px;" alt="Collisions" width="400">
 
 > Example of Mario and Goomba's animations working
 
