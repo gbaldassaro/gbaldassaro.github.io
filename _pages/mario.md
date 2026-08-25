@@ -14,7 +14,6 @@ This project is a recreation of level 1-1 from Super Mario Bros. made in Java, f
 </video>
 
 <br>
-<br>
 
 # [GitHub Repository](https://github.com/gbaldassaro/Mario-Java)
 
