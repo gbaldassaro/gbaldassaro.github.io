@@ -16,6 +16,21 @@ layout: single
   </header>
 </div>
 
+<style>
+  #projects .archive__item-teaser {
+    text-align: center !important;
+    padding: 1.5rem !important;
+  }
+  #projects .archive__item-teaser img {
+    width: auto !important;
+    max-width: 70% !important; /* Adjust this to make it wider/narrower */
+    /*height: 120px !important;  /* Adjust this to make it taller/shorter */
+    object-fit: cover !important;
+    margin: 0 auto !important;
+    border-radius: 6px !important;
+  }
+</style>
+
 <div id="projects" style="scroll-margin-top: 6em;">
   {% include feature_row %}
 </div>
