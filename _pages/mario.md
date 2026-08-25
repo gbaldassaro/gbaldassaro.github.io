@@ -9,7 +9,7 @@ title: "Java Super Mario Bros."
 This project is a recreation of level 1-1 from Super Mario Bros. made in Java, featuring custom physics, entity and element systems, and real-time rendering. I worked on this project towards the end of my AP Computer Science A course in high school. After following [this guide](https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong/) to make Pong in Java, I felt like challenging myself to create something much more complex yet approachable. The code is exactly as I left it when I stopped working on it in high school, and I think that it's fun to see how far I've come and how I still use many of the same coding practices in my work today. 
 
 <video autoplay muted loop playsinline style="margin-left: 75px;" width="400">
-  <source src="/assets/images/mario_level.mp4" type="video/mp4">
+  <source src="/assets/images/mario/mario_level.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -30,7 +30,7 @@ When the level is created, every moving object (including Mario and Goombas) is 
 Collisions between `Entity` objects are handled using axis-aligned bounding boxes (AABB). Every frame, every `Entity` checks for collisions with every other `Entity`. Thanks to the small scope of this project, there is negligible performance cost for all of these checks.
 
 
-<img src="/assets/images/mario_collisions.gif" style="margin-left: 75px;" alt="Collisions" width="400">
+<img src="/assets/images/mario/mario_collisions.gif" style="margin-left: 75px;" alt="Collisions" width="400">
 
 > Example of collisions with Mario and `Element` objects
 
@@ -43,7 +43,7 @@ After collisions are determined, each `Entity` object is moved. Each `Entity` ha
 
 Mario's movement is acceleration based, with different acceleration and top speed magnitudes based on if the player is holding the run button. Additionally, Mario's acceleration and decceleration is dependent on if he is grounded or not, making him slow down and change directions much slower when in the air.
 
-<img src="/assets/images/mario_movement.gif" style="margin-left: 75px;" alt="Collisions" width="400">
+<img src="/assets/images/mario/mario_movement.gif" style="margin-left: 75px;" alt="Collisions" width="400">
 
 > Examples of changing directions when grounded and in the air
 
@@ -58,7 +58,7 @@ Each sprite is stored as a 2D array of integers, with animated sprites being sto
 
 Animated sprites are stored in 3D arrays so that animation frames can be chosen via an index. For example, when Mario moves along the ground, a `double` is increased based on his speed, which is then cast as an `int` and divided modulo `n`, where `n` is the number of frames in the animation, and finally used to index through the 3D animation array. This cycles through each frame of the animation and gave me tight control of animation timings. This method was applicable to the Goomba's walk cycle as well.  
 
-<img src="/assets/images/mario_animations.gif" style="margin-left: 75px;" alt="Collisions" width="400">
+<img src="/assets/images/mario/mario_animations.gif" style="margin-left: 75px;" alt="Collisions" width="400">
 
 > Example of Mario and Goomba's animations working
 
