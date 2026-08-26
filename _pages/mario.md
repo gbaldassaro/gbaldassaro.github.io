@@ -8,12 +8,12 @@ title: "Java Super Mario Bros."
 
 This project is a recreation of level 1-1 from Super Mario Bros. made in Java, featuring custom physics, entity and element systems, and real-time rendering. I worked on this project towards the end of my AP Computer Science A course in high school. After following [this guide](https://kevinsguides.com/guides/code/java/javaprojs/simple-2d-pong/) to make Pong in Java, I felt like challenging myself to create something much more complex yet approachable. The code is exactly as I left it when I stopped working on it in high school, and I think that it's fun to see how far I've come and how I still use many of the same coding practices in my work today. 
 
-<video autoplay muted loop playsinline style="margin-left: 75px;" width="400">
-  <source src="/assets/images/mario/mario_level.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<br>
+<p align="center">
+  <video autoplay muted loop playsinline style="margin-left: 75px;" width="400">
+    <source src="/assets/images/mario/mario_level.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
 
 # [GitHub Repository](https://github.com/gbaldassaro/Mario-Java)
 
@@ -29,10 +29,15 @@ When the level is created, every moving object (including Mario and Goombas) is 
 Collisions between `Entity` objects are handled using axis-aligned bounding boxes (AABB). Every frame, every `Entity` checks for collisions with every other `Entity`. Thanks to the small scope of this project, there is negligible performance cost for all of these checks.
 
 
-<img src="/assets/images/mario/mario_collisions.gif" style="margin-left: 75px;" alt="collisions" width="400">
+<p align="center">
+  <img src="/assets/images/mario/mario_collisions.gif" style="margin-left: 75px;" alt="collisions" width="400">
+</p>
+
+<div align="center">
 
 > Example of collisions with Mario and `Element` objects
 
+</div>
 
 Each `Entity` is 32 by 32 pixels. A collision is about to happen if one `Entity`'s collision box will be moved into another `Entity`'s collision box on the next frame. Collision logic runs for all four sides of each `Entity` objects' AABB, executing custom defined reactions to collisions. Additionally, collision checks between `Element` objects and `Entity` objects are done in the same way, checking if an `Entity`'s speed will move it into one of the four sides of an `Element`. If so, the `Entity` is placed on the edge of the `Element` with other reactions based on `Entity` type and which side it collided with (for example, `Entity` grounded states are set to true if the top side is collided with). 
 
@@ -42,10 +47,15 @@ After collisions are determined, each `Entity` object is moved. Each `Entity` ha
 
 Mario's movement is acceleration based, with different acceleration and top speed magnitudes based on if the player is holding the run button. Additionally, Mario's acceleration and decceleration is dependent on if he is grounded or not, making him slow down and change directions much slower when in the air.
 
-<img src="/assets/images/mario/mario_movement.gif" style="margin-left: 75px;" alt="movement" width="400">
+<p align="center">
+  <img src="/assets/images/mario/mario_movement.gif" style="margin-left: 75px;" alt="movement" width="400">
+</p>
+
+<div align="center">
 
 > Examples of changing directions when grounded and in the air
 
+</div>
 
 ## Entity and Element System
 Every moving object in this project is an `Entity`, including Mario and Goombas (as well as planned additions like Koopas and Powerups). The `Entity` class serves as the base superclass that all moving characters extend. It manages shared variables for basic properties, such as position and speed, and defines essential methods for moving and rendering the objects. The `Entity` base class contains all logic for Mario himself, so any other `Entity` objects override his methods for their own. Utilizing this base `Entity` class, the main game loop simply iterates through a list of all `Entity` objects and calls their respective move and draw methods.
@@ -57,10 +67,15 @@ Each sprite is stored as a 2D array of integers, with animated sprites being sto
 
 Animated sprites are stored in 3D arrays so that animation frames can be chosen via an index. For example, when Mario moves along the ground, a `double` is increased based on his speed, which is then cast as an `int` and divided modulo `n`, where `n` is the number of frames in the animation, and finally used to index through the 3D animation array. This cycles through each frame of the animation and gave me tight control of animation timings. This method was applicable to the Goomba's walk cycle as well.  
 
-<img src="/assets/images/mario/mario_animations.gif" style="margin-left: 75px;" alt="animations" width="400">
+<p align="center">
+  <img src="/assets/images/mario/mario_animations.gif" style="margin-left: 75px;" alt="animations" width="400">
+</p>
+
+<div align="center">
 
 > Example of Mario and Goomba's animations working
 
+</div>
 
 ## Reflections
 I made this project before I was exposed to many fundamental concepts in game development like delta-time, data-driven design, or file structure. Because of the lack of delta-time corrections, Mario's movement is dependent on framerate. While the code targets a specific framerate, slowdowns in framerate still lead to slowdowns in physics and gameplay. Additionally, I hardcoded the entire level and every sprite, which is functional but not at all scaleable. Pipelines for loading external level files and sprites would improve this project a ton. Finally, every script used in the project is unorganized in a single directory, so having file organization and using packages to communicate between files would work much better.
