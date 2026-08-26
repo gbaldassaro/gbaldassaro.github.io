@@ -18,10 +18,14 @@ In my project, attention and perception are exemplified very definitively. Depen
 
 When viewed from the correct angle, the player can see an obvious (albeit blurry/grainy) image of Lovett Hall on Rice campus.
 
-<img src="/assets/images/psyc/lovett.png" alt="lovett" class="center-image" width="800">
+<p align="center">
+    <img src="/assets/images/psyc/lovett.png" alt="lovett" class="center-image" width="800">
+</p>
 
 Upon moving inside the sculpture, the individual objects become clear, showing the sculpture is made of peaches, avocados, bananas, toasters, and more!
 
-<img src="/assets/images/psyc/detail.png" alt="detail" class="center-image" width="800">
+<p align="center">
+    <img src="/assets/images/psyc/detail.png" alt="detail" class="center-image" width="800">
+</p>
 
 The project includes four pre-selected images for the player to try out. Unfortunately, the Unity web based player I’m using does not allow for players to upload their own images, but the project works for any image. You can play the project yourself to see them!

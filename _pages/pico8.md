@@ -10,7 +10,7 @@ PICO-8 is one of my favorite tools for prototyping small ideas, as its 128x128 c
 
 ## Pop the Lock
 
-A recreation of one of my favorite arcade games, *Pop the Lock*. This is a small reflex game where a needle sweeps around a circle and you have to tap right as it crosses a target zone, which then relocates and speeds the needle up. It's a good example of how little scope a game actually needs once you've got a tight core loop and an escalating difficulty curve.
+A recreation of one of my favorite arcade games, *Pop the Lock*. This is a small reflex game where a needle sweeps around a circle and you have to tap right as it crosses a target zone, which then relocates and speeds the needle up. It's a good example of how little scope a game actually needs to still be fun.
 
 <img src="/assets/images/pico8/lock.gif" style="margin-left: 75px;" alt="Pop the Lock demo" width="256">
 

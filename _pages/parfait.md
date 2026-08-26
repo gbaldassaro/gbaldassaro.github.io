@@ -10,7 +10,9 @@ title: "Planetary Parfait"
 
 # [Steam Page](https://store.steampowered.com/app/2721860/Planetary_Parfait/)
 
-<img src="/assets/images/parfait/banner.png" alt="banner" class="center-image" width="800">
+<p align="center">
+    <img src="/assets/images/parfait/banner.png" alt="banner" class="center-image" width="800">
+</p>
 
 <br>
 
@@ -20,7 +22,9 @@ title: "Planetary Parfait"
 
 building robust and scientifically accurate data co-registration
 
-<img src="/assets/images/parfait/cesium_layers.png" alt="layers" class="center-image" width="800">
+<p align="center">
+    <img src="/assets/images/parfait/cesium_layers.png" alt="layers" class="center-image" width="800">
+</p>
 
 ## Contributions
 
