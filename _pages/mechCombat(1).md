@@ -33,9 +33,9 @@ Dashing is an instant burst: if the player has enough energy and is already movi
 
 Vertical movement follows a similar energy-gated pattern. A grounded jump gives a single burst of vertical velocity from the target jump height, but holding the jump input while airborne instead drains energy over time to smoothly ramp toward a hover speed — letting the player extend a jump into a controlled hover as long as energy allows. Energy regenerates after a short delay following its last use, and regenerates twice as fast while grounded, which encourages landing between aggressive dash/hover strings rather than hovering indefinitely.
 
-<img src="/assets/images/mechCombat_movement.gif" style="margin-left: 75px;" alt="Movement" width="400">
-
-> Dashing out of a walk, with rotation smoothing slowed mid-dash
+<p align="center">
+  <img src="/assets/images/mechCombat_movement.gif" alt="movement" width="800">
+</p>
 
 ## Camera
 
@@ -51,9 +51,9 @@ Breaking a lock is handled with a small timer rather than a single input: the pl
 
 While locked on, the camera automatically swaps which shoulder it favors based on the player's movement direction relative to the camera — moving right shifts the camera to frame more of what's ahead on that side, and vice versa — smoothed with `SmoothDamp` rather than snapping. On top of that, a "dutch" (roll) tilt is applied to both Cinemachine cameras, scaled by how fast the player is strafing, which adds a bit of physicality to fast lateral movement without needing any hand-animated camera work.
 
-<img src="/assets/images/mechCombat_lockOn.gif" style="margin-left: 75px;" alt="Lock-on camera" width="400">
-
-> Acquiring a lock-on target and the camera's shoulder swap during a strafe
+<p align="center">
+  <img src="/assets/images/mechCombat_lockOn.gif" alt="lock on" width="800">
+</p>
 
 ## Weapon System
 
@@ -67,6 +67,6 @@ The more interesting piece is `TrackEnemy()`, which aims each hand's reticle not
 
 Projectiles themselves use raycasts each `FixedUpdate` rather than rigidbody collisions, which avoids tunneling through thin geometry at high speed, and each one stores its owner so it can never damage whoever fired it.
 
-<img src="/assets/images/mechCombat_weapons.gif" style="margin-left: 75px;" alt="Weapon firing and reloading" width="400">
-
-> Firing with lead-prediction reticles active, then reloading
+<p align="center">
+  <img src="/assets/images/mechCombat_weapon.gif" alt="weapon" width="800">
+</p>

@@ -8,15 +8,17 @@ title: "Code Athens"
 
 *Code Athens* was made as a submission to the Game Makers Toolkit (GMTK) Game Jam 2026, a four day marathon to make a complete game based on the theme "Count Down." The game is a point-and-click spy thriller themed visual novel, with gameplay inspired by the game *A Little to the Left*. 
 
-<img src="/assets/images/codeAthens/title.png" style="margin-left: 75px;" alt="banner" width="400">
+<p align="center">
+    <img src="/assets/images/codeAthens/title.png" alt="banner" width="400">
+</p>
 
 # [Play Here!](https://gbaldassaro.itch.io/codeathens)
 
-Every participant in the jam is asked to play and rate other game submissions in several categories. There were over **10,500 submissions** to the jam, and *Code Athens* ranked extremely well in several categories of ratings. 
+Every participant in the jam is asked to play and rate other game submissions in several categories. There were over **10,500 submissions** to the jam, and *Code Athens* ranked extremely well in several categories of ratings. *Code Athens* received high ratings out of 5 in each category as well.
 
-<img src="/assets/images/codeAthens/codeAthens_ratings.png" style="margin-left: 75px;" alt="ratings" width="400">
-
-> Scores out of 5 for each rating category.
+<p align="center">
+    <img src="/assets/images/codeAthens/codeAthens_ratings.png" alt="ratings" width="400">
+</p>
 
 ## Team
 
