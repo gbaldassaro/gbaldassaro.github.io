@@ -12,6 +12,8 @@ $footer-link-color: #ffffff;
 $text-color: #ffffff;               // Main body text color
 $muted-text-color: #ffffff;         // Secondary text (dates, meta info)
 $link-color: $primary-color;          // Makes your links match the accent
+$link-color-visited: $primary-color;   // stop the 25% black mix on visited links
+$link-color-hover: mix(#ffffff, $primary-color, 25%);  // optional: control hover too
 $info-color: $primary-color;          // Updates buttons and notice blocks to red
 $masthead-link-color: $primary-color; // Ensures top navigation hover states match
 
