@@ -6,16 +6,17 @@ author_profile: true
 title: "Mech Combat Demo"
 ---
 
-This project is a third-person mech combat demo made in Unity, built around fast, hover-capable movement, a dynamic lock-on camera, and a data-driven ranged weapon system. It's inspired by the *Armored Core*-style of combat: a heavier, more grounded feel than most character action games, but with dashing and hovering that keep fights fast and vertical. My goal was to prototype a "feel" first and build the systems needed to support it — a state-based movement controller, a Cinemachine-driven camera that can snap between free look and locked-on combat, and weapons authored as data rather than code.
+This project is a third-person mech combat demo made in Unity, built around a fast movement system, a dynamic lock-on camera, and a data-driven ranged weapon system. It's inspired by the *Armored Core* style of combat, with a heavier, more grounded feel with dashing and hovering that makes fights fast and vertical. My goal was to prototype a "feel" first and build the systems needed to support it — a state-based movement controller, a Cinemachine-driven camera that can snap between free look and locked-on combat, and weapons authored as data rather than code.
 
 # [Play Here!](link)
 
-<video autoplay muted loop playsinline style="margin-left: 75px;" width="400">
-  <source src="/assets/images/mechCombat_gameplay.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<p align="center">
+  <video autoplay muted loop playsinline width="800">
+    <source src="/assets/images/mechCombat_gameplay.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
 
-<br>
 <br>
 
 # [GitHub Repository](https://github.com/gbaldassaro/Unity-AC-Demo)

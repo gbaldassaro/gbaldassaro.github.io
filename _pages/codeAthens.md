@@ -10,8 +10,6 @@ title: "Code Athens"
 
 <img src="/assets/images/codeAthens/title.png" style="margin-left: 75px;" alt="banner" width="400">
 
-<br>
-
 # [Play Here!](https://gbaldassaro.itch.io/codeathens)
 
 Every participant in the jam is asked to play and rate other game submissions in several categories. There were over **10,500 submissions** to the jam, and *Code Athens* ranked extremely well in several categories of ratings. 
