@@ -10,52 +10,58 @@ This project is a real-time renderer built from scratch in C++ and OpenGL, follo
 
 # [GitHub Repository](https://github.com/gbaldassaro/OpenGL-Renderer)
 
-To build my renderer beyond a simple test scene, I wanted to recreate one of my favorite environments in any video game: the **Firelink Altar and Kiln of the First Flame** from *Dark Souls*, which offers several interesting effects that make the environment beautiful. The altar room is dark and lit sparsely by torches, the staircase has an ethereal white haze, and the sun bleeds through the sky into the dark Kiln. This gave me a concrete visual target to chase and forced me to apply the topics I learned practically.
+To build my renderer beyond a simple test scene, I wanted to recreate one of my favorite environments in any video game: the **Firelink Altar and Kiln of the First Flame** from *Dark Souls*, which offers several interesting effects that make the environment beautiful. The altar room is dark and lit sparsely by torches, the staircase has an ethereal white haze, and the sun bleeds through the sky into the dark Kiln. This gave me a concrete visual target to chase and forced me to apply the topics I learned practically. While not exactly the same, I am proud of the effects I was able to implement.
 
-<table>
-  <tr>
-    <td>
-      <img src="/assets/images/openGL/altar_renderer.png" alt="altar renderer" width="48%">
-      <br>
-      <em>Firelink Altar, my renderer</em>
-    </td>
-    <td>
-      <img src="/assets/images/openGL/altar.jpeg" alt="altar" width="48%">
-      <br>
-      <em>Firelink Altar, Dark Souls</em>
-    </td>
-  </tr>
-</table>
+<p align="center">
+    <table>
+    <tr>
+        <td>
+        <img src="/assets/images/openGL/altar_renderer.png" alt="altar renderer" width="450">
+        <br>
+        <em>Firelink Altar, my renderer</em>
+        </td>
+        <td>
+        <img src="/assets/images/openGL/altar.jpeg" alt="altar" width="450">
+        <br>
+        <em>Firelink Altar, Dark Souls</em>
+        </td>
+    </tr>
+    </table>
+</p>
 
-<table>
-  <tr>
-    <td>
-      <img src="/assets/images/openGL/stair_renderer.png" alt="stair renderer" width="48%">
-      <br>
-      <em>Staircase, my renderer</em>
-    </td>
-    <td>
-      <img src="/assets/images/openGL/stair.jpeg" alt="stair" width="48%">
-      <br>
-      <em>Staircase, Dark Souls</em>
-    </td>
-  </tr>
-</table>
+<p align="center">
+    <table>
+    <tr>
+        <td>
+        <img src="/assets/images/openGL/stair_renderer.png" alt="stair renderer" width="450">
+        <br>
+        <em>Staircase, my renderer</em>
+        </td>
+        <td>
+        <img src="/assets/images/openGL/stair.jpeg" alt="stair" width="450">
+        <br>
+        <em>Staircase, Dark Souls</em>
+        </td>
+    </tr>
+    </table>
+</p>
 
-<table>
-  <tr>
-    <td>
-      <img src="/assets/images/openGL/kiln_renderer.png" alt="kiln renderer" width="48%">
-      <br>
-      <em>Kiln of the First Flame, my renderer</em>
-    </td>
-    <td>
-      <img src="/assets/images/openGL/kiln.jpeg" alt="kiln" width="48%">
-      <br>
-      <em>Kiln of the First Flame, Dark Souls</em>
-    </td>
-  </tr>
-</table>
+<p align="center">
+    <table>
+    <tr>
+        <td>
+        <img src="/assets/images/openGL/kiln_renderer.png" alt="kiln renderer" width="450">
+        <br>
+        <em>Kiln of the First Flame, my renderer</em>
+        </td>
+        <td>
+        <img src="/assets/images/openGL/kiln.jpeg" alt="kiln" width="450">
+        <br>
+        <em>Kiln of the First Flame, Dark Souls</em>
+        </td>
+    </tr>
+    </table>
+</p>
 
 ## Topics learned
 
@@ -83,4 +89,4 @@ All post-processing runs through the same single shader, sampling the scene's re
 ## Next steps
 
 There are plenty of things left to add to make this renderer more advanced. 
-shadows, sun effect, pbr, raytracing
+shadows, sun effect, pbr, raytracing, more accurate to dark souls
