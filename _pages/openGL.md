@@ -12,17 +12,50 @@ This project is a real-time renderer built from scratch in C++ and OpenGL, follo
 
 To build my renderer beyond a simple test scene, I wanted to recreate one of my favorite environments in any video game: the **Firelink Altar and Kiln of the First Flame** from *Dark Souls*, which offers several interesting effects that make the environment beautiful. The altar room is dark and lit sparsely by torches, the staircase has an ethereal white haze, and the sun bleeds through the sky into the dark Kiln. This gave me a concrete visual target to chase and forced me to apply the topics I learned practically.
 
-## Screenshots/Comparisons
+<table>
+  <tr>
+    <td>
+      <img src="/assets/images/openGL/altar_renderer.png" alt="altar renderer" width="400">
+      <br>
+      <em>*Firelink Altar*, my renderer</em>
+    </td>
+    <td>
+      <img src="/assets/images/openGL/altar.jpeg" alt="altar" width="400">
+      <br>
+      <em>*Firelink Altar*, *Dark Souls*</em>
+    </td>
+  </tr>
+</table>
 
-Because so much of this project was about matching a mood rather than just implementing a technique, I kept reference screenshots from *Dark Souls* open the whole time I was tuning the lighting — especially the warm, flickering torchlight against cool fog and a soft directional sun. Here are a couple of side-by-sides between renders from this project and the reference shots that guided them.
+<table>
+  <tr>
+    <td>
+      <img src="/assets/images/openGL/stair_renderer.png" alt="stair renderer" width="400">
+      <br>
+      <em>Staircase, my renderer</em>
+    </td>
+    <td>
+      <img src="/assets/images/openGL/stair.jpeg" alt="stair" width="400">
+      <br>
+      <em>Staircase, *Dark Souls*</em>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-    <img src="/assets/images/openGL_compare_firelight.jpg" alt="Firelight comparison" width="800">
-</p>
-
-<p align="center">
-    <img src="/assets/images/openGL_compare_fog.jpg" alt="Fog and sky comparison" width="800">
-</p>
+<table>
+  <tr>
+    <td>
+      <img src="/assets/images/openGL/kiln_renderer.png" alt="kiln renderer" width="400">
+      <br>
+      <em>*Kiln of the First Flame*, my renderer</em>
+    </td>
+    <td>
+      <img src="/assets/images/openGL/kiln.jpeg" alt="kiln" width="400">
+      <br>
+      <em>*Kiln of the First Flame*, *Dark Souls*</em>
+    </td>
+  </tr>
+</table>
 
 ## Topics learned
 
