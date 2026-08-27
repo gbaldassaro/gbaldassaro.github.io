@@ -9,7 +9,10 @@ title: "Perspective Sculpture Generator"
 I made this Unity game as my final project for PSYC 203, Intro to Cognitive Psychology. Our assignment was to create something that represents a brain, incorporating two topics of the course material. My two topics were **Perceptual Organization** and **Attention**.
 
 <p align="center">
-    <img src="/assets/images/psyc/showcase.mp4" alt="lovett" class="center-image" width="800">
+  <video autoplay muted loop playsinline width="800">
+    <source src="/assets/images/psyc/showcase.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </p>
 
 # [Try It Here!](https://play.unity.com/en/games/0eb9b2c0-6272-4616-bef5-98110270bba9/build-a-brain-project)
