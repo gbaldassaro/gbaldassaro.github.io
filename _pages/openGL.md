@@ -15,14 +15,14 @@ To build my renderer beyond a simple test scene, I wanted to recreate one of my 
 <table>
   <tr>
     <td>
-      <img src="/assets/images/openGL/altar_renderer.png" alt="altar renderer" width="400">
+      <img src="/assets/images/openGL/altar_renderer.png" alt="altar renderer" width="48%">
       <br>
-      <em>*Firelink Altar*, my renderer</em>
+      <em>Firelink Altar, my renderer</em>
     </td>
     <td>
-      <img src="/assets/images/openGL/altar.jpeg" alt="altar" width="400">
+      <img src="/assets/images/openGL/altar.jpeg" alt="altar" width="48%">
       <br>
-      <em>*Firelink Altar*, *Dark Souls*</em>
+      <em>Firelink Altar, Dark Souls</em>
     </td>
   </tr>
 </table>
@@ -30,14 +30,14 @@ To build my renderer beyond a simple test scene, I wanted to recreate one of my 
 <table>
   <tr>
     <td>
-      <img src="/assets/images/openGL/stair_renderer.png" alt="stair renderer" width="400">
+      <img src="/assets/images/openGL/stair_renderer.png" alt="stair renderer" width="48%">
       <br>
       <em>Staircase, my renderer</em>
     </td>
     <td>
-      <img src="/assets/images/openGL/stair.jpeg" alt="stair" width="400">
+      <img src="/assets/images/openGL/stair.jpeg" alt="stair" width="48%">
       <br>
-      <em>Staircase, *Dark Souls*</em>
+      <em>Staircase, Dark Souls</em>
     </td>
   </tr>
 </table>
@@ -45,14 +45,14 @@ To build my renderer beyond a simple test scene, I wanted to recreate one of my 
 <table>
   <tr>
     <td>
-      <img src="/assets/images/openGL/kiln_renderer.png" alt="kiln renderer" width="400">
+      <img src="/assets/images/openGL/kiln_renderer.png" alt="kiln renderer" width="48%">
       <br>
-      <em>*Kiln of the First Flame*, my renderer</em>
+      <em>Kiln of the First Flame, my renderer</em>
     </td>
     <td>
-      <img src="/assets/images/openGL/kiln.jpeg" alt="kiln" width="400">
+      <img src="/assets/images/openGL/kiln.jpeg" alt="kiln" width="48%">
       <br>
-      <em>*Kiln of the First Flame*, *Dark Souls*</em>
+      <em>Kiln of the First Flame, Dark Souls</em>
     </td>
   </tr>
 </table>
@@ -73,12 +73,14 @@ The shadow-mapping pipeline itself is fully built — the depth pass, the light-
 
 All post-processing runs through the same single shader, sampling the scene's rendered-to-texture framebuffer and branching on an integer effect ID rather than needing a separate shader per effect. Sharpen, blur, and edge-detection are all the same 3x3 convolution kernel sampled over neighboring texels with different weights, while grayscale, inversion, and brightness thresholding are simple single-sample effects. Bloom is the most involved: the bright-pass buffer from the main render is blurred across several horizontal and vertical passes using a pair of small, alternating ("ping-pong") framebuffers, and the blurred result is added back on top of the original scene.
 
+<p align="center">
+  <video autoplay muted loop playsinline width="800">
+    <source src="/assets/images/openGL/effects.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
+
 ## Next steps
 
-**Shadows**
-
-**Sun Effect**
-
-**Raytracing**
-
-The next big addition I want to make is real-time raytracing, likely as a separate rendering path I can toggle against the current rasterized one for comparison. Before that, though, I want to finish wiring the shadow-mapping pipeline all the way into the main lighting calculation, since most of the infrastructure for it is already there.
+There are plenty of things left to add to make this renderer more advanced. 
+shadows, sun effect, pbr, raytracing
