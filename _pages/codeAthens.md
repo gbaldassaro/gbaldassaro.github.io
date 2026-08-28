@@ -32,7 +32,31 @@ Our team spanned across 5 different time zones, so finding optimal time to coope
 
 **Shared Vision**
 
-Drafting the idea of our game took over a day of our precious four days, since each member had their own interpretation and conflicting visions of the theme. I helped to lead the deliberation process in choosing a final idea for the game, which allowed everyone to begin working on their specific tasks with a definite vision in mind. This challenge ultimately led to what I am most proud of about *Code Athens*, being its unified and polished theming and style.
+Drafting the idea of our game took over a day of our precious four days, since each member had their own interpretation and conflicting visions of the theme. I helped to lead the deliberation process in choosing a final idea for the game, which allowed everyone to begin working on their specific tasks with a definite vision in mind. 
+
+To choose an idea, we all brainstormed any idea we could think of and listed it for everyone to see, then we chose what we all agreed to be our top three ideas. I wrote up a quick blurb for each idea to give a full representation of the idea, then we all voted on our favorite.
+
+<p align="center">
+    <img src="/assets/images/codeAthens/game_ideas.png" alt="ideas" width="400">
+</p>
+
+<p align="center">
+    <table>
+    <tr>
+        <td>
+        <img src="/assets/images/codeAthens/game_idea_1.png" alt="idea 1" width="300">
+        </td>
+        <td>
+        <img src="/assets/images/codeAthens/game_idea_2.png" alt="idea 2" width="300">
+        </td>
+        <td>
+        <img src="/assets/images/codeAthens/game_idea_3.png" alt="idea 3" width="300">
+        </td>
+    </tr>
+    </table>
+</p>
+
+This challenge ultimately led to what I am most proud of about *Code Athens*, being its unified and polished theming and style.
 
 **Scope Creep**
 
