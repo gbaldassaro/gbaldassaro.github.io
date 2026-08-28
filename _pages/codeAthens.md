@@ -26,6 +26,22 @@ My role on *Code Athens* was the lead programmer, responsible for developing the
 
 ## Challenges faced
 
+**Time Differences** 
+
+Our team spanned across 5 different time zones, so finding optimal time to cooperate proved difficult. At times that I was actively working on the game, most of the team was asleep. This made it so that new ideas and progress updates came in bursts, rather than continuously. 
+
+**Shared Vision**
+
+Drafting the idea of our game took over a day of our precious four days, since each member had their own interpretation and conflicting visions of the theme. I helped to lead the deliberation process in choosing a final idea for the game, which allowed everyone to begin working on their specific tasks with a definite vision in mind. 
+
+To choose an idea, we all brainstormed any idea we could think of and listed it for everyone to see, then we chose what we all agreed to be our top three ideas. I wrote up a quick blurb for each idea to give a full representation of the idea, then we all voted on our favorite.
+
+<p align="center">
+    <img src="/assets/images/codeAthens/game_ideas.png" alt="ideas" width="400">
+</p>
+
+This challenge ultimately led to what I am most proud of about *Code Athens*, being its unified and polished theming and style.
+
 **Time Constraints**
 
 Since the jam took place only over four days, I had to work quickly to prototype gameplay ideas for the team to try out. I didn't polish any ideas that the team didn't like or that we didn't think could be feasibly finished, which ended up working in our favor to give *Code Athens* a completed feel.
@@ -57,21 +73,7 @@ Since the jam took place only over four days, I had to work quickly to prototype
   <em>Prototype for the cut sniper minigame.</em>
 </p>
 
-**Time Differences** 
-
-Our team spanned across 5 different time zones, so finding optimal time to cooperate proved difficult. At times that I was actively working on the game, most of the team was asleep. This made it so that new ideas and progress updates came in bursts, rather than continuously. 
-
-**Shared Vision**
-
-Drafting the idea of our game took over a day of our precious four days, since each member had their own interpretation and conflicting visions of the theme. I helped to lead the deliberation process in choosing a final idea for the game, which allowed everyone to begin working on their specific tasks with a definite vision in mind. 
-
-To choose an idea, we all brainstormed any idea we could think of and listed it for everyone to see, then we chose what we all agreed to be our top three ideas. I wrote up a quick blurb for each idea to give a full representation of the idea, then we all voted on our favorite.
-
-<p align="center">
-    <img src="/assets/images/codeAthens/game_ideas.png" alt="ideas" width="400">
-</p>
-
-This challenge ultimately led to what I am most proud of about *Code Athens*, being its unified and polished theming and style.
+My teammates were able to try out the prototypes and give feedback so that development effort only went towards the best and most completable ideas.
 
 **Scope Creep**
 

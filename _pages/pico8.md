@@ -26,7 +26,7 @@ A recreation of the classic mechanical arcade game *Ice Cold Beer*. This is a ti
 
 ## Conway's Game of Life
 
-A fully interactive implementation of Conway's Game of Life, with a cursor to toggle cells and a pause/play toggle to step the simulation. Instead of a separate grid array, this one reads and writes cell states directly to and from the screen with `pget`/`pset`, treating the framebuffer itself as the data structure.
+An interactive implementation of *Conway's Game of Life*, with a cursor to toggle cells and a pause/play toggle to step the simulation. Instead of a separate grid array, this one reads and writes cell states directly to and from the screen with `pget`/`pset`, treating the framebuffer itself as the data structure.
 
 <p align="center">
     <img src="/assets/images/pico8/life.gif" alt="Conway's Game of Life demo" width="300">
@@ -42,7 +42,7 @@ A top-down survival demo where the player dashes to dodge bullets and defeat ene
 
 ## Space
 
-A momentum-based, Asteroids-style thruster toy, where thrust is applied relative to the ship's current direction rather than directly setting its velocity. I experimented with particles in this demo, and the small effects like the thruster particles and a starfield background helped make the feeling I wanted to convey.
+A momentum-based spaceship movement demo, where thrust is applied relative to the ship's current direction rather than directly setting its velocity. I experimented with particles in this demo, and the small effects like the thruster particles and a starfield background helped make the feeling I wanted to convey.
 
 <p align="center">
     <img src="/assets/images/pico8/space.gif" alt="Space demo" width="300">
@@ -56,9 +56,9 @@ A small particle test with a character holding an umbrella that you move around 
     <img src="/assets/images/pico8/rain.gif" alt="Rain demo" width="300">
 </p>
 
-## Deathball
+## DeathBall
 
-A prototype recreation of the arcade game *Death Ball*, a local two-player game where players bounce a ball around using simple velocity transfer on collision, all under constant gravity and wall bounces. It was difficult but rewarding to implement the custom physics, including collisions, bouncing, and friction.
+A prototype recreation of the arcade game *DeathBall*, a local two-player game where players bounce a ball around using simple velocity transfer on collision, all under constant gravity and wall bounces. It was difficult but rewarding to implement the custom physics, including collisions, bouncing, and friction.
 
 <p align="center">
     <img src="/assets/images/pico8/deathball.gif" alt="Deathball demo" width="300">
