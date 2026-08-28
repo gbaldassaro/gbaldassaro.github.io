@@ -17,7 +17,7 @@ title: "Code Athens"
 Every participant in the jam is asked to play and rate other game submissions in several categories. There were over **10,500 submissions** to the jam, and *Code Athens* ranked extremely well in several categories of ratings. *Code Athens* received high ratings out of 5 in each category as well.
 
 <p align="center">
-    <img src="/assets/images/codeAthens/codeAthens_ratings.png" alt="ratings" width="400">
+    <img src="/assets/images/codeAthens/ratings.png" alt="ratings" width="400">
 </p>
 
 ## Team
@@ -25,6 +25,34 @@ Every participant in the jam is asked to play and rate other game submissions in
 My role on *Code Athens* was the lead programmer, responsible for developing the game in Unity and incorporating everyone's contributions into the finished product. I worked with a team of seven others to create *Code Athens*: a team lead, character artist, writer/designer/2D background artist, 3D background artist, musician, and two playtesters. The finished product is a labor of love that has the mark of each team member in it.
 
 ## Challenges faced
+
+**Time Constraints**
+
+Since the jam took place only over four days, I had to work quickly to prototype gameplay ideas for the team to try out. I didn't polish any ideas that the team didn't like or that we didn't think could be feasibly finished, which ended up working in our favor to give *Code Athens* a completed feel.
+
+<p align="center">
+  <video autoplay muted loop playsinline width="800">
+    <source src="/assets/images/codeAthens/gun_prototype.mp4" type="video/mp4">
+    <em>Prototype for the gun assembly minigame.</em>
+    Your browser does not support the video tag.
+  </video>
+</p>
+
+<p align="center">
+  <video autoplay muted loop playsinline width="800">
+    <source src="/assets/images/codeAthens/grenade_prototype.mp4" type="video/mp4">
+    <em>Prototype for the grenade minigame.</em>
+    Your browser does not support the video tag.
+  </video>
+</p>
+
+<p align="center">
+  <video autoplay muted loop playsinline width="800">
+    <source src="/assets/images/codeAthens/sniper_cut.mp4" type="video/mp4">
+    <em>Prototype for the cut sniper minigame.</em>
+    Your browser does not support the video tag.
+  </video>
+</p>
 
 **Time Differences** 
 
@@ -38,22 +66,6 @@ To choose an idea, we all brainstormed any idea we could think of and listed it 
 
 <p align="center">
     <img src="/assets/images/codeAthens/game_ideas.png" alt="ideas" width="400">
-</p>
-
-<p align="center">
-    <table>
-    <tr>
-        <td>
-        <img src="/assets/images/codeAthens/game_idea_1.png" alt="idea 1" width="300">
-        </td>
-        <td>
-        <img src="/assets/images/codeAthens/game_idea_2.png" alt="idea 2" width="300">
-        </td>
-        <td>
-        <img src="/assets/images/codeAthens/game_idea_3.png" alt="idea 3" width="300">
-        </td>
-    </tr>
-    </table>
 </p>
 
 This challenge ultimately led to what I am most proud of about *Code Athens*, being its unified and polished theming and style.
