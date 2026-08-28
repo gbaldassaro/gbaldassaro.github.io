@@ -31,27 +31,27 @@ My role on *Code Athens* was the lead programmer, responsible for developing the
 Since the jam took place only over four days, I had to work quickly to prototype gameplay ideas for the team to try out. I didn't polish any ideas that the team didn't like or that we didn't think could be feasibly finished, which ended up working in our favor to give *Code Athens* a completed feel.
 
 <p align="center">
-  <video autoplay muted loop playsinline width="800">
+  <video autoplay muted loop playsinline width="700">
     <source src="/assets/images/codeAthens/gun_prototype.mp4" type="video/mp4">
-    <em>Prototype for the gun assembly minigame.</em>
     Your browser does not support the video tag.
   </video>
+  <em>Prototype for the gun assembly minigame.</em>
 </p>
 
 <p align="center">
-  <video autoplay muted loop playsinline width="800">
+  <video autoplay muted loop playsinline width="700">
     <source src="/assets/images/codeAthens/grenade_prototype.mp4" type="video/mp4">
-    <em>Prototype for the grenade minigame.</em>
     Your browser does not support the video tag.
   </video>
+  <em>Prototype for the grenade minigame.</em>
 </p>
 
 <p align="center">
-  <video autoplay muted loop playsinline width="800">
+  <video autoplay muted loop playsinline width="700">
     <source src="/assets/images/codeAthens/sniper_cut.mp4" type="video/mp4">
-    <em>Prototype for the cut sniper minigame.</em>
     Your browser does not support the video tag.
   </video>
+  <em>Prototype for the cut sniper minigame.</em>
 </p>
 
 **Time Differences** 
