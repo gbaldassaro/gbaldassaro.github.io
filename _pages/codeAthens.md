@@ -35,6 +35,7 @@ Since the jam took place only over four days, I had to work quickly to prototype
     <source src="/assets/images/codeAthens/gun_prototype.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <br>
   <em>Prototype for the gun assembly minigame.</em>
 </p>
 
@@ -43,6 +44,7 @@ Since the jam took place only over four days, I had to work quickly to prototype
     <source src="/assets/images/codeAthens/grenade_prototype.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <br>
   <em>Prototype for the grenade minigame.</em>
 </p>
 
@@ -51,6 +53,7 @@ Since the jam took place only over four days, I had to work quickly to prototype
     <source src="/assets/images/codeAthens/sniper_cut.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <br>
   <em>Prototype for the cut sniper minigame.</em>
 </p>
 
