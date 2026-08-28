@@ -6,7 +6,7 @@ author_profile: true
 title: "Code Athens"
 ---
 
-*Code Athens* was made as a submission to the Game Makers Toolkit (GMTK) Game Jam 2026, a four day marathon to make a complete game based on the theme "Count Down." The game is a point-and-click spy thriller themed visual novel, with gameplay inspired by the game *A Little to the Left*. 
+*Code Athens* was made as a submission to the [Game Makers Toolkit (GMTK) Game Jam 2026](https://itch.io/jam/gmtk-jam-2026), a **four day marathon** to make a complete game based on the theme "Count Down." The game is a point-and-click spy thriller themed visual novel, with gameplay inspired by the game *A Little to the Left*. 
 
 <p align="center">
     <img src="/assets/images/codeAthens/title.png" alt="banner" width="400">

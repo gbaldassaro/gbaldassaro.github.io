@@ -10,7 +10,7 @@ This project is a real-time renderer built from scratch in C++ and OpenGL, follo
 
 # [GitHub Repository](https://github.com/gbaldassaro/OpenGL-Renderer)
 
-To build my renderer beyond a simple test scene, I wanted to recreate one of my favorite environments in any video game: the **Firelink Altar and Kiln of the First Flame** from *Dark Souls*, which offers several interesting effects that make the environment beautiful. The altar room is dark and lit sparsely by torches, the staircase has an ethereal white haze, and the sun bleeds through the sky into the dark Kiln. This gave me a concrete visual target to chase and forced me to apply the topics I learned practically. 
+To build my renderer beyond a simple test scene, I wanted to recreate one of my favorite environments in any video game: the **Firelink Altar and Kiln of the First Flame** from *Dark Souls*, which offers several interesting effects that make the environment beautiful. The altar room is dark and lit sparsely by torches, the staircase has an ethereal white haze, and the sun bleeds through the sky into the dark Kiln. This gave me a concrete visual target to chase and forced me to apply the topics I learned practically. Below are some comparisons of my renderer with screenshots of *Dark Souls* I took myself.
 
 <p align="center">
     <table>
