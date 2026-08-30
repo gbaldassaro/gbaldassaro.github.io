@@ -12,7 +12,7 @@ This project is a third-person mech combat demo made in Unity, built around a fa
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat_gameplay.mp4" type="video/mp4">
+    <source src="/assets/images/mechCombat/gameplay.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -35,7 +35,7 @@ Vertical movement follows a similar energy-gated pattern. A grounded jump gives 
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat_movement.mp4" type="video/mp4">
+    <source src="/assets/images/mechCombat/movement.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -50,7 +50,7 @@ When the player requests a lock, `FindLockOn` gathers nearby colliders with `Phy
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat_lockOn.mp4" type="video/mp4">
+    <source src="/assets/images/mechCombat/lockOn.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -63,7 +63,7 @@ While locked on, the camera automatically swaps which shoulder it favors based o
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat_strafing.mp4" type="video/mp4">
+    <source src="/assets/images/mechCombat/strafing.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -74,10 +74,12 @@ Weapons are defined as `ScriptableObject` assets (`RangedWeaponData`) rather tha
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat_weapon.mp4" type="video/mp4">
+    <source src="/assets/images/mechCombat/shooting.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
+
+Projectiles themselves use raycasts each `FixedUpdate` rather than rigidbody collisions, which avoids tunneling through thin geometry at high speed, and each one stores its owner so it can never damage whoever fired it.
 
 **Enemy Tracking**
 
@@ -85,12 +87,10 @@ In *Armored Core VI: Fires of Rubicon*, enemies are always moving rapidly. The p
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat_tracking.mp4" type="video/mp4">
+    <source src="/assets/images/mechCombat/tracking.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
-
-Projectiles themselves use raycasts each `FixedUpdate` rather than rigidbody collisions, which avoids tunneling through thin geometry at high speed, and each one stores its owner so it can never damage whoever fired it.
 
 ## Next Steps
 

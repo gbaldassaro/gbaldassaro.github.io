@@ -6,7 +6,7 @@ author_profile: true
 title: "PICO-8 Mini-Demos"
 ---
 
-PICO-8 is one of my favorite tools for prototyping small ideas, as its 128x128 canvas and stripped-down Lua API make intentional and careful code necessary. These are a handful of small demos I made to try out a single idea each: a physics interaction, simple arcade games, feeling, etc.
+PICO-8 is one of my favorite tools for prototyping small ideas, as its 128x128 canvas and stripped-down Lua API make intentional and careful code necessary. These are a handful of small demos I made to try out a single idea each: a simple arcade game, a physics interaction, a feeling, etc.
 
 ## Pop the Lock
 
