@@ -55,8 +55,6 @@ When the player requests a lock, `FindLockOn` gathers nearby colliders with `Phy
   </video>
 </p>
 
-Breaking a lock is handled with a small timer rather than a single input: the player has to hold look input past `lockOnExitTime` before the camera releases the target, which avoids accidentally dropping a lock from a small camera nudge.
-
 **Camera Movement**
 
 While locked on, the camera automatically swaps which shoulder it favors based on the player's movement direction relative to the camera. Moving right shifts the camera to frame more of what's ahead on that side, and vice versa. On top of that, a roll tilt is applied to both Cinemachine cameras, scaled by how fast the player is strafing, which adds a bit of physicality to fast lateral movement.
