@@ -17,11 +17,16 @@ This project is a third-person mech combat demo made in Unity, built around a fa
   </video>
 </p>
 
-<br>
-
 # [GitHub Repository](https://github.com/gbaldassaro/Unity-AC-Demo)
 
 ## Movement
+
+<p align="center">
+  <video autoplay muted loop playsinline width="800">
+    <source src="/assets/images/mechCombat/movement.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
 
 The player's movement is handled by a small state machine (`PlayerState`: `Idle`, `Walking`, `Boosting`) layered on top of Unity's `CharacterController`. Rather than relying on rigidbody physics, `PlayerController` computes a desired horizontal velocity every frame from input and camera orientation, then smooths the player's actual velocity toward it with `Vector3.SmoothDamp`. This keeps movement responsive but not twitchy, and lets me tune acceleration separately from top speed for each state.
 
@@ -33,20 +38,7 @@ Dashing is an instant burst: if the player has enough energy and is already movi
 
 Vertical movement follows a similar energy-gated pattern. A grounded jump gives a single burst of vertical velocity from the target jump height, but holding the jump input while airborne instead drains energy over time to smoothly ramp toward a hover speed, letting the player extend a jump into a controlled hover as long as energy allows. Energy regenerates after a short delay following its last use, and regenerates twice as fast while grounded, which encourages landing between aggressive dash/hover strings rather than hovering indefinitely.
 
-<p align="center">
-  <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat/movement.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
-
 ## Camera
-
-The camera is built around three states and two Cinemachine virtual cameras: a free orbit camera and a dedicated lock-on camera that only activates once a target is acquired.
-
-**Lock-On System**
-
-When the player requests a lock, `FindLockOn` gathers nearby colliders with `Physics.OverlapSphere`, filters down to anything tagged `Enemy` within camera view, and confirms each candidate isn't obstructed with a raycast before comparing it against the current best choice. The enemy closest to the center of the screen wins. If the current target is destroyed mid-fight, the camera immediately re-runs this search rather than snapping back to free look, so the transition to a new target is continuous instead of jarring.
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
@@ -55,9 +47,13 @@ When the player requests a lock, `FindLockOn` gathers nearby colliders with `Phy
   </video>
 </p>
 
-**Camera Movement**
+The camera is built around three states and two Cinemachine virtual cameras: a free orbit camera and a dedicated lock-on camera that only activates once a target is acquired.
 
-While locked on, the camera automatically swaps which shoulder it favors based on the player's movement direction relative to the camera. Moving right shifts the camera to frame more of what's ahead on that side, and vice versa. On top of that, a roll tilt is applied to both Cinemachine cameras, scaled by how fast the player is strafing, which adds a bit of physicality to fast lateral movement.
+**Lock-On System**
+
+When the player requests a lock, `FindLockOn` gathers nearby colliders with `Physics.OverlapSphere`, filters down to anything tagged `Enemy` within camera view, and confirms each candidate isn't obstructed with a raycast before comparing it against the current best choice. The enemy closest to the center of the screen wins. If the current target is destroyed mid-fight, the camera immediately re-runs this search rather than snapping back to free look, so the transition to a new target is continuous instead of jarring.
+
+**Camera Movement**
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
@@ -66,9 +62,9 @@ While locked on, the camera automatically swaps which shoulder it favors based o
   </video>
 </p>
 
-## Weapon System
+While locked on, the camera automatically swaps which shoulder it favors based on the player's movement direction relative to the camera. Moving right shifts the camera to frame more of what's ahead on that side, and vice versa. On top of that, a roll tilt is applied to both Cinemachine cameras, scaled by how fast the player is strafing, which adds a bit of physicality to fast lateral movement.
 
-Weapons are defined as `ScriptableObject` assets (`RangedWeaponData`) rather than hardcoded per-weapon classes. Each asset stores its gun model, projectile prefab and speed, fire rate, damage, ammo count, reload time, and spread. `RangedWeaponController` just reads whichever `RangedWeaponData` it's given at runtime, instantiates the correct gun model, and drives firing/reloading off of it. This means adding a new weapon is just a matter of creating a new data asset, with no new code required. Additionally, each hand runs its own independent `RangedWeaponController`, so the left and right weapons can fire, reload, and run out of ammo on separate timers.
+## Weapon System
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
@@ -77,11 +73,11 @@ Weapons are defined as `ScriptableObject` assets (`RangedWeaponData`) rather tha
   </video>
 </p>
 
+Weapons are defined as `ScriptableObject` assets (`RangedWeaponData`) rather than hardcoded per-weapon classes. Each asset stores its gun model, projectile prefab and speed, fire rate, damage, ammo count, reload time, and spread. `RangedWeaponController` just reads whichever `RangedWeaponData` it's given at runtime, instantiates the correct gun model, and drives firing/reloading off of it. This means adding a new weapon is just a matter of creating a new data asset, with no new code required. Additionally, each hand runs its own independent `RangedWeaponController`, so the left and right weapons can fire, reload, and run out of ammo on separate timers.
+
 Projectiles themselves use raycasts each `FixedUpdate` rather than rigidbody collisions, which avoids tunneling through thin geometry at high speed, and each one stores its owner so it can never damage whoever fired it.
 
 **Enemy Tracking**
-
-In *Armored Core VI: Fires of Rubicon*, enemies are always moving rapidly. The player's Armored Core contains tracking systems that help to lead weapon fire ahead of moving enemies. In my project, I implemented this using the current enemy's tracked velocity and the player's projectile's speed, solving a quadratic for the time the projectile would intercept the enemy. The player's weapon is aimed towards the position of the interception, so shots actually converge on a moving enemy instead of trailing behind it.
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
@@ -89,6 +85,8 @@ In *Armored Core VI: Fires of Rubicon*, enemies are always moving rapidly. The p
     Your browser does not support the video tag.
   </video>
 </p>
+
+In *Armored Core VI: Fires of Rubicon*, enemies are always moving rapidly. The player's Armored Core contains tracking systems that help to lead weapon fire ahead of moving enemies. In my project, I implemented this using the current enemy's tracked velocity and the player's projectile's speed, solving a quadratic for the time the projectile would intercept the enemy. The player's weapon is aimed towards the position of the interception, so shots actually converge on a moving enemy instead of trailing behind it.
 
 ## Next Steps
 
