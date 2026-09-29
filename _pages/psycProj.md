@@ -2,7 +2,7 @@
 permalink: /psycProj/
 layout: single
 classes: wide
-author_profile: true
+author_profile: false
 title: "Perspective Sculpture Generator"
 ---
 

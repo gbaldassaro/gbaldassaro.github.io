@@ -2,7 +2,7 @@
 permalink: /mario/
 layout: single
 classes: wide
-author_profile: true
+author_profile: false
 title: "Java Super Mario Bros."
 ---
 
