@@ -2,7 +2,7 @@
 permalink: /parfait/
 layout: single
 classes: wide
-author_profile: false
+author_profile: true
 title: "Planetary Parfait"
 ---
 

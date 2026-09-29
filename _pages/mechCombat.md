@@ -2,7 +2,7 @@
 permalink: /mechCombat/
 layout: single
 classes: wide
-author_profile: false
+author_profile: true
 title: "Mech Combat Demo"
 ---
 

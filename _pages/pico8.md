@@ -2,7 +2,7 @@
 permalink: /pico8/
 layout: single
 classes: wide
-author_profile: false
+author_profile: true
 title: "PICO-8 Mini-Demos"
 ---
 
