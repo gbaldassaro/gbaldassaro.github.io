@@ -10,7 +10,7 @@ This project is a recreation of level 1-1 from Super Mario Bros. made in Java, f
 
 <p align="center">
   <video autoplay muted loop playsinline width="400">
-    <source src="/assets/images/mario/mario_level.mp4" type="video/mp4">
+    <source src="/assets/media/mario/mario_level.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -27,7 +27,7 @@ When the level is created, every moving object (including Mario and Goombas) is 
 **Collisions**
 
 <p align="center">
-  <img src="/assets/images/mario/mario_collisions.gif" alt="collisions" width="400">
+  <img src="/assets/media/mario/mario_collisions.gif" alt="collisions" width="400">
 </p>
 
 Collisions between `Entity` objects are handled using axis-aligned bounding boxes (AABB). Every frame, every `Entity` checks for collisions with every other `Entity`. Thanks to the small scope of this project, there is negligible performance cost for all of these checks.
@@ -37,7 +37,7 @@ Each `Entity` is 32 by 32 pixels. A collision is about to happen if one `Entity`
 **Movement**
 
 <p align="center">
-  <img src="/assets/images/mario/mario_movement.gif" alt="movement" width="400">
+  <img src="/assets/media/mario/mario_movement.gif" alt="movement" width="400">
 </p>
 
 After collisions are determined, each `Entity` object is moved. Each `Entity` has `speedX` and `speedY` variables that are applied to their `x` and `y` positions. These speed variables are determined by a constantly applied gravity force, collision reactions, and the player's input (for Mario). Horizontal motion accounts for screen scroll speed so that `Entity` objects are not moved incorrectly while the screen moves. 
@@ -52,7 +52,7 @@ The `Element` class operates similarly to the `Entity` class, but it is dedicate
 ## Rendering
 
 <p align="center">
-  <img src="/assets/images/mario/mario_animations.gif" alt="animations" width="400">
+  <img src="/assets/media/mario/mario_animations.gif" alt="animations" width="400">
 </p>
 
 Each sprite is stored as a 2D array of integers, with animated sprites being stored in 3D arrays. The integers in the array correspond to predefined colors from a color pallet. Every frame, each pixel of the sprite is colored in according to its integer array. A benefit of this is that color pallets can easily be changed to recolor objects, such as recoloring Mario to give his Fire-Flower look. 

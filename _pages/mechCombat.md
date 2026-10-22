@@ -12,7 +12,7 @@ This project is a third-person mech combat demo made in Unity, built around a fa
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat/gameplay.mp4" type="video/mp4">
+    <source src="/assets/media/mechCombat/gameplay.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -23,12 +23,12 @@ This project is a third-person mech combat demo made in Unity, built around a fa
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat/movement.mp4" type="video/mp4">
+    <source src="/assets/media/mechCombat/movement.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
 
-The player's movement is handled by a small state machine (`PlayerState`: `Idle`, `Walking`, `Boosting`) layered on top of Unity's `CharacterController`. Rather than relying on rigidbody physics, `PlayerController` computes a desired horizontal velocity every frame from input and camera orientation, then smooths the player's actual velocity toward it with `Vector3.SmoothDamp`. This keeps movement responsive but not twitchy, and lets me tune acceleration separately from top speed for each state.
+The player's movement is handled by a finite-state-machine (`PlayerState`: `Idle`, `Walking`, `Boosting`) layered on top of Unity's `CharacterController`. Rather than relying on rigidbody physics, `PlayerController` computes a desired horizontal velocity every frame from input and camera orientation, then smooths the player's actual velocity toward it with `Vector3.SmoothDamp`. This keeps movement responsive but not twitchy, and lets me tune acceleration separately from top speed for each state.
 
 Horizontal input is interpreted differently depending on the camera. While free-aiming or searching for a lock-on target, movement is relative to the camera's forward and right vectors, but once locked on, it switches to being relative to the player's own forward vector so that strafing stays consistent around a target.
 
@@ -42,7 +42,7 @@ Vertical movement follows a similar energy-gated pattern. A grounded jump gives 
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat/lockOn.mp4" type="video/mp4">
+    <source src="/assets/media/mechCombat/lockOn.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -57,7 +57,7 @@ When the player requests a lock, `FindLockOn` gathers nearby colliders with `Phy
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat/strafing.mp4" type="video/mp4">
+    <source src="/assets/media/mechCombat/strafing.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -68,7 +68,7 @@ While locked on, the camera automatically swaps which shoulder it favors based o
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat/shooting.mp4" type="video/mp4">
+    <source src="/assets/media/mechCombat/shooting.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -81,7 +81,7 @@ Projectiles themselves use raycasts each `FixedUpdate` rather than rigidbody col
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/mechCombat/tracking.mp4" type="video/mp4">
+    <source src="/assets/media/mechCombat/tracking.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>

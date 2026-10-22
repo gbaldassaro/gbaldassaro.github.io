@@ -11,7 +11,7 @@ title: "Planetary Parfait"
 # [Steam Page](https://store.steampowered.com/app/2721860/Planetary_Parfait/)
 
 <p align="center">
-    <img src="/assets/images/parfait/banner.png" alt="banner" class="center-image" width="800">
+    <img src="/assets/media/parfait/banner.png" alt="banner" class="center-image" width="800">
 </p>
 
 # [GitHub Repository](https://github.com/asu-meteorstudio/PlanetaryParfait)
@@ -25,7 +25,7 @@ The core challenge of this project was getting scientific data layers to line up
 Placing a JMARS data layer onto the terrain means converting every vertex of its procedurally generated mesh from geodetic to geocentric latitude, so that Cesium's own coordinate functions can correctly map the vertex to the correct coordinate on the terrain surface. These vertices are then raycast and placed onto the Cesium Moon mesh, effectively superimposing the JMARS data layer on the Cesium Moon. Reading data back out, for example when sampling a per-pixel data values at a point the user is looking at, runs the same coordinate conversion in reverse, letting users probe their imported data at per-pixel levels.
 
 <p align="center">
-    <img src="/assets/images/parfait/cesium_layers.png" alt="layers" class="center-image" width="800">
+    <img src="/assets/media/parfait/cesium_layers.png" alt="layers" class="center-image" width="800">
 </p>
 
 With this in place, scientists can view their own custom data layers directly on physically accurate lunar terrain rather than a rough approximation, and combine that with JMARS API access to get GIS-like analysis inside an intuitive desktop or VR environment. That combination is what makes *Planetary Parfait* useful for more than visualization alone. It's a tool for real mission planning work, like scouting and site analysis for missions under the Artemis program.

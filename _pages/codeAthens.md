@@ -9,7 +9,7 @@ title: "Code Athens"
 *Code Athens* was made as a submission to the [Game Makers Toolkit (GMTK) Game Jam 2026](https://itch.io/jam/gmtk-jam-2026), a **four day marathon** to make a complete game based on the theme "Count Down." The game is a point-and-click spy thriller themed visual novel, with gameplay inspired by the game *A Little to the Left*. 
 
 <p align="center">
-    <img src="/assets/images/codeAthens/title.png" alt="banner" width="400">
+    <img src="/assets/media/codeAthens/title.png" alt="banner" width="400">
 </p>
 
 # [Play Here!](https://gbaldassaro.itch.io/codeathens)
@@ -17,7 +17,7 @@ title: "Code Athens"
 Every participant in the jam is asked to play and rate other game submissions in several categories. There were over **10,500 submissions** to the jam, and *Code Athens* ranked extremely well in several categories of ratings. *Code Athens* received high ratings out of 5 in each category as well.
 
 <p align="center">
-    <img src="/assets/images/codeAthens/ratings.png" alt="ratings" width="400">
+    <img src="/assets/media/codeAthens/ratings.png" alt="ratings" width="400">
 </p>
 
 ## Team
@@ -37,7 +37,7 @@ Drafting the idea of our game took over a day of our precious four days, since e
 To choose an idea, we all brainstormed any idea we could think of and listed it for everyone to see, then we chose what we all agreed to be our top three ideas. I wrote up a quick blurb for each idea to give a full representation of the idea, then we all voted on our favorite.
 
 <p align="center">
-    <img src="/assets/images/codeAthens/game_ideas.png" alt="ideas" width="400">
+    <img src="/assets/media/codeAthens/game_ideas.png" alt="ideas" width="400">
 </p>
 
 This challenge ultimately led to what I am most proud of about *Code Athens*, being its unified and polished theming and style.
@@ -48,7 +48,7 @@ Since the jam took place only over four days, I had to work quickly to prototype
 
 <p align="center">
   <video autoplay muted loop playsinline width="700">
-    <source src="/assets/images/codeAthens/gun_prototype.mp4" type="video/mp4">
+    <source src="/assets/media/codeAthens/gun_prototype.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <br>
@@ -57,7 +57,7 @@ Since the jam took place only over four days, I had to work quickly to prototype
 
 <p align="center">
   <video autoplay muted loop playsinline width="700">
-    <source src="/assets/images/codeAthens/grenade_prototype.mp4" type="video/mp4">
+    <source src="/assets/media/codeAthens/grenade_prototype.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <br>
@@ -66,7 +66,7 @@ Since the jam took place only over four days, I had to work quickly to prototype
 
 <p align="center">
   <video autoplay muted loop playsinline width="700">
-    <source src="/assets/images/codeAthens/sniper_cut.mp4" type="video/mp4">
+    <source src="/assets/media/codeAthens/sniper_cut.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <br>

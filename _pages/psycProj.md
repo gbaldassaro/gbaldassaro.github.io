@@ -10,7 +10,7 @@ I made this Unity game as my final project for PSYC 203, Intro to Cognitive Psyc
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/psyc/showcase.mp4" type="video/mp4">
+    <source src="/assets/media/psyc/showcase.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -26,13 +26,13 @@ In my project, attention and perception are exemplified very definitively. Depen
 When viewed from the correct angle, the player can see an obvious (albeit blurry/grainy) image of Lovett Hall on Rice campus.
 
 <p align="center">
-    <img src="/assets/images/psyc/lovett.png" alt="lovett" class="center-image" width="800">
+    <img src="/assets/media/psyc/lovett.png" alt="lovett" class="center-image" width="800">
 </p>
 
 Upon moving inside the sculpture, the individual objects become clear, showing the sculpture is made of peaches, avocados, bananas, toasters, and more!
 
 <p align="center">
-    <img src="/assets/images/psyc/detail.png" alt="detail" class="center-image" width="800">
+    <img src="/assets/media/psyc/detail.png" alt="detail" class="center-image" width="800">
 </p>
 
-The project includes four pre-selected images for the player to try out. Unfortunately, the Unity web based player I’m using does not allow for players to upload their own images, but the project works for any image. You can play the project yourself to see them!
+The project includes four pre-selected media for the player to try out. Unfortunately, the Unity web based player I’m using does not allow for players to upload their own media, but the project works for any image. You can play the project yourself to see them!

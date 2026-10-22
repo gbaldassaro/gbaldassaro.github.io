@@ -16,14 +16,14 @@ To build my renderer beyond a simple test scene, I wanted to recreate one of my 
     <table>
     <tr>
         <td>
-        <img src="/assets/images/openGL/altar_renderer.png" alt="altar renderer" width="450">
+        <img src="/assets/media/openGL/altar_renderer.png" alt="altar renderer" width="450">
         <br>
         <p align="center">
             <em>Firelink Altar, my renderer</em>
         </p>
         </td>
         <td>
-        <img src="/assets/images/openGL/altar.jpeg" alt="altar" width="450">
+        <img src="/assets/media/openGL/altar.jpeg" alt="altar" width="450">
         <br>
         <p align="center">
             <em>Firelink Altar, Dark Souls</em>
@@ -37,14 +37,14 @@ To build my renderer beyond a simple test scene, I wanted to recreate one of my 
     <table>
     <tr>
         <td>
-        <img src="/assets/images/openGL/stair_renderer.png" alt="stair renderer" width="450">
+        <img src="/assets/media/openGL/stair_renderer.png" alt="stair renderer" width="450">
         <br>
         <p align="center">
             <em>Staircase, my renderer</em>
         </p>
         </td>
         <td>
-        <img src="/assets/images/openGL/stair.jpeg" alt="stair" width="450">
+        <img src="/assets/media/openGL/stair.jpeg" alt="stair" width="450">
         <br>
         <p align="center">
             <em>Staircase, Dark Souls</em>
@@ -58,14 +58,14 @@ To build my renderer beyond a simple test scene, I wanted to recreate one of my 
     <table>
     <tr>
         <td>
-        <img src="/assets/images/openGL/kiln_renderer.png" alt="kiln renderer" width="450">
+        <img src="/assets/media/openGL/kiln_renderer.png" alt="kiln renderer" width="450">
         <br>
         <p align="center">
             <em>Kiln of the First Flame, my renderer</em>
         </p>
         </td>
         <td>
-        <img src="/assets/images/openGL/kiln.jpeg" alt="kiln" width="450">
+        <img src="/assets/media/openGL/kiln.jpeg" alt="kiln" width="450">
         <br>
         <p align="center">
             <em>Kiln of the First Flame, Dark Souls</em>
@@ -93,7 +93,7 @@ I also implemented the ability to choose post-processing effects at runtime usin
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/images/openGL/effects.mp4" type="video/mp4">
+    <source src="/assets/media/openGL/effects.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>

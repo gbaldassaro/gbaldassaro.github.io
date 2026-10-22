@@ -56,7 +56,7 @@ plugins:
 
 author:
   name   : "Gage Baldassaro"
-  avatar : "/assets/images/headshot.jpg"
+  avatar : "/assets/media/headshot.jpg"
   bio    : "Computer Science Student at Rice University"
   links:
     - label: "GitHub"
