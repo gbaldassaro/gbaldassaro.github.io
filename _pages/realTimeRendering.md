@@ -26,12 +26,7 @@ null
 
 ## Procedural Mesh Interactions
 
-<p align="center">
-  <video playsinline width="800">
-    <source src="/assets/media/realTimeRendering/proj1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
+{% include video id="wROO8AlNQCU" provider="youtube" %}
 
 <p align="center">
     <img src="/assets/media/realTimeRendering/cut.png" alt="lovett" class="center-image" width="800">
