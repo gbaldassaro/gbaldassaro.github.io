@@ -81,7 +81,7 @@ While not exactly the same as in the game, I am proud of the effects I was able 
 
 **Rendering Pipeline**
 
-This project was a great way for me to learn the details of each step of the graphics pipeline. I learned to appreciate and understand the function and possible creative uses of each step of the pipeline. Implementing coordinate transormation matrices, color buffers, model loading, and more from the ground up gave me valuable experience and familiarity with the data structures and low level management that each use. I especially liked seeing the transformation matrices in action, as I was finally able to practically apply what I learned in my Linear Algebra course at Rice. 
+This project was a great way for me to learn the details of each step of the graphics pipeline. I learned to appreciate and understand the function and possible creative uses of each step of the pipeline. Implementing coordinate transformation matrices, color buffers, model loading, and more from the ground up gave me valuable experience and familiarity with the data structures and low level management that each use. I especially liked seeing the transformation matrices in action, as I was finally able to practically apply what I learned in my Linear Algebra course at Rice. 
 
 **Shaders & Lighting**
 
