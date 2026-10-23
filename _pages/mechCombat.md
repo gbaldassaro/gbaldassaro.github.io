@@ -68,7 +68,7 @@ While locked on, the camera automatically swaps which shoulder it favors based o
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/media/mechCombat/shooting.mp4" type="video/mp4">
+    <source src="/assets/media/videos/shooting.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -81,7 +81,7 @@ Projectiles themselves use raycasts each `FixedUpdate` rather than rigidbody col
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/media/mechCombat/tracking.mp4" type="video/mp4">
+    <source src="/assets/media/videos/tracking.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
