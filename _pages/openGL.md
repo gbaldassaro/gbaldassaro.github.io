@@ -93,7 +93,7 @@ I also implemented the ability to choose post-processing effects at runtime usin
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/media/openGL/effects.mp4" type="video/mp4">
+    <source src="/assets/media/videos/effects.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>

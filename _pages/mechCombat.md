@@ -6,13 +6,13 @@ author_profile: true
 title: "Mech Combat Demo"
 ---
 
-This project is a third-person mech combat demo made in Unity, built around a fast movement system, a dynamic lock-on camera, and a data-driven ranged weapon system. It's inspired by *Armored Core VI: Fires of Rubicon*, with a heavier, more grounded feel with dashing and hovering that makes fights fast and vertical. My goal was to prototype a feel similar to *Armored Core VI*, with a state-based movement controller, a camera system supporting free aim and locked-on combat, and data-based weapons.
+This project is a third-person mech combat demo made in Unity, built around a fast movement system, a dynamic lock-on camera, and a data-driven ranged weapon system. It's inspired by *Armored Core VI: Fires of Rubicon*, with a heavier, more grounded feel with dashing and hovering that makes fights fast and vertical. My goal was to prototype a feel similar to *Armored Core VI*, with a state-based movement controller, a camera system supporting free aim and locked-on combat, and data-driven weapons.
 
 # <span style="color: #e60000;">Playable Build Coming Soon!</span>
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/media/mechCombat/gameplay.mp4" type="video/mp4">
+    <source src="/assets/media/videos/gameplay.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -23,7 +23,7 @@ This project is a third-person mech combat demo made in Unity, built around a fa
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/media/mechCombat/movement.mp4" type="video/mp4">
+    <source src="/assets/media/videos/movement.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -42,7 +42,7 @@ Vertical movement follows a similar energy-gated pattern. A grounded jump gives 
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/media/mechCombat/lockOn.mp4" type="video/mp4">
+    <source src="/assets/media/videos/lockOn.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
@@ -57,7 +57,7 @@ When the player requests a lock, `FindLockOn` gathers nearby colliders with `Phy
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/media/mechCombat/strafing.mp4" type="video/mp4">
+    <source src="/assets/media/videos/strafing.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>

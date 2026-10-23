@@ -48,7 +48,7 @@ Since the jam took place only over four days, I had to work quickly to prototype
 
 <p align="center">
   <video autoplay muted loop playsinline width="700">
-    <source src="/assets/media/codeAthens/gun_prototype.mp4" type="video/mp4">
+    <source src="/assets/media/videos/gun_prototype.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <br>
@@ -57,7 +57,7 @@ Since the jam took place only over four days, I had to work quickly to prototype
 
 <p align="center">
   <video autoplay muted loop playsinline width="700">
-    <source src="/assets/media/codeAthens/grenade_prototype.mp4" type="video/mp4">
+    <source src="/assets/media/videos/grenade_prototype.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <br>
@@ -66,7 +66,7 @@ Since the jam took place only over four days, I had to work quickly to prototype
 
 <p align="center">
   <video autoplay muted loop playsinline width="700">
-    <source src="/assets/media/codeAthens/sniper_cut.mp4" type="video/mp4">
+    <source src="/assets/media/videos/sniper_cut.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <br>

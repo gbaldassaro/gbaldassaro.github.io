@@ -10,7 +10,7 @@ I made this Unity game as my final project for PSYC 203, Intro to Cognitive Psyc
 
 <p align="center">
   <video autoplay muted loop playsinline width="800">
-    <source src="/assets/media/psyc/showcase.mp4" type="video/mp4">
+    <source src="/assets/media/videos/showcase.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>

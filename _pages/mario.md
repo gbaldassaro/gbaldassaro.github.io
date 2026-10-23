@@ -10,7 +10,7 @@ This project is a recreation of level 1-1 from Super Mario Bros. made in Java, f
 
 <p align="center">
   <video autoplay muted loop playsinline width="400">
-    <source src="/assets/media/mario/mario_level.mp4" type="video/mp4">
+    <source src="/assets/media/videos/mario_level.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
