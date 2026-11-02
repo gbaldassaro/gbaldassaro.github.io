@@ -14,7 +14,9 @@ title: "Planetary Parfait"
     <img src="/assets/media/parfait/banner.png" alt="banner" class="center-image" width="800">
 </p>
 
-# [GitHub Repository](https://github.com/asu-meteorstudio/PlanetaryParfait)
+# [Main GitHub Repository](https://github.com/asu-meteorstudio/PlanetaryParfait)
+# [Cesium Branch GitHub Repository](https://github.com/ArdentAegis/PlanetaryParfaitCesium)
+
 
 ## Cesium Integration
 
